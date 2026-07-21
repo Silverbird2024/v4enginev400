@@ -483,6 +483,7 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #SVGicon23:hover {fill:#FFFF00}
 #Headline132 {position:absolute;left:174px;top:585px;width:42px;height:17px;margin:0;color:white;font-family:Times New Roman,Times,serif;font-size:9pt;text-align:center}
 #Headline132:hover {color:#FFFF00}
+#PushButton15 {position:absolute;left:315px;top:52px;width:34px;height:22px;margin:0;font-size:7pt;opacity:0.32}
 #where2 {position:relative;width:100%;height:100%;overflow:auto;;background-color:#383838}
 #SVGicon240 {position:absolute;left:306px;top:16px;width:52px;height:36px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
 #PushButton269 {position:absolute;left:271px;top:19px;width:32px;height:35px;margin:0;color:blue;font-size:7pt}
@@ -498,6 +499,7 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #SVGicon24:hover {fill:#FFFF00}
 #Headline134 {position:absolute;left:174px;top:585px;width:42px;height:17px;margin:0;color:white;font-family:Times New Roman,Times,serif;font-size:9pt;text-align:center}
 #Headline134:hover {color:#FFFF00}
+#PushButton17 {position:absolute;left:315px;top:52px;width:34px;height:22px;margin:0;font-size:7pt;opacity:0.32}
 #where3 {position:relative;width:100%;height:100%;overflow:auto;;background-color:#383838}
 #SVGicon241 {position:absolute;left:306px;top:16px;width:52px;height:36px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
 #PushButton273 {position:absolute;left:271px;top:19px;width:32px;height:35px;margin:0;color:blue;font-size:7pt}
@@ -1115,13 +1117,11 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #TextArea13 {position:absolute;left:393px;top:133px;width:348px;height:880px;margin:0;}
 #PushButton528 {position:absolute;left:394px;top:98px;width:150px;height:31px;margin:0;}
 #PushButton355 {position:absolute;left:209px;top:1024px;width:150px;height:31px;margin:0;}
-#PushButton359 {position:absolute;left:393px;top:1024px;width:150px;height:31px;margin:0;}
 #TextArea246 {position:absolute;left:11px;top:1058px;width:348px;height:880px;margin:0;}
 #TextArea247 {position:absolute;left:392px;top:1059px;width:348px;height:880px;margin:0;}
 #TextArea399 {position:absolute;left:14px;top:96px;width:185px;height:33px;margin:0;}
 #TextArea400 {position:absolute;left:558px;top:97px;width:185px;height:33px;margin:0;}
 #TextArea401 {position:absolute;left:12px;top:1022px;width:185px;height:33px;margin:0;}
-#TextArea402 {position:absolute;left:553px;top:1023px;width:185px;height:33px;margin:0;}
 #Headline665 {position:absolute;left:271px;top:5px;width:100px;height:24px;margin:0;color:white;font-size:14pt}
 #Prayer1 {position:relative;width:100%;height:100%;overflow:auto;;background-color:#383838}
 #Headline74 {position:absolute;left:24px;top:38px;width:346px;height:41px;margin:0;color:#F0E68C;background-color:#383838}
@@ -1133,8 +1133,9 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #TextArea395 {position:absolute;left:13px;top:94px;width:191px;height:38px;margin:0;color:#F0E68C;background-color:#383838}
 #TextArea396 {position:absolute;left:393px;top:-2px;width:191px;height:38px;margin:0;color:#F0E68C;background-color:#383838}
 #TextArea397 {position:absolute;left:12px;top:715px;width:191px;height:38px;margin:0;color:#F0E68C;background-color:#383838}
-#TextArea398 {position:absolute;left:387px;top:715px;width:191px;height:38px;margin:0;color:#F0E68C;background-color:#383838}
 #Headline668 {position:absolute;left:238px;top:19px;width:123px;height:38px;margin:0;color:white;font-size:19pt}
+#Headline68 {position:absolute;left:389px;top:725px;width:143px;height:22px;margin:0;color:white;font-size:13pt;font-weight:600}
+#PushButton16 {position:absolute;left:585px;top:718px;width:150px;height:31px;margin:0;}
 #Allvariables {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF}
 #Headline697 {position:absolute;left:222px;top:1px;width:151px;height:36px;margin:0;color:#707070}
 #PushButton217 {position:absolute;left:10px;top:9px;width:184px;height:32px;margin:0;color:blue;font-size:9pt}
