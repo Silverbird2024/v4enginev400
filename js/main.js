@@ -239,7 +239,7 @@ NeoApp.controller("landinghome_Ctrl", function($scope,$rootScope,$route,$timeout
 $App.NAB.PageNumber = 1;
 $App.NAB.PageID = "landinghome";
 $scope.Headline146_click = function() {$scope.GotoPage( "landinghome" );};
-$scope.SVGicon1_click = function() {$("#"+"NumericInput1").focus();};
+$scope.SVGicon1_click = function() {$("#"+"PushButton14").focus();};
 $scope.SVGicon48_click = function() {window.document.location.reload();};
 $scope.Headline30_click = function() {$scope.GotoPage( "VERSION" );};
 $scope.PushButton165_click = function() {$App.zt126 = localStorage.getItem("zt126");
@@ -404,6 +404,7 @@ $scope.Headline61_click = function() {window.open($App.ulr37, "_blank");};
 $scope.Headline62_click = function() {window.open($App.ulr38, "_blank");};
 $scope.Headline63_click = function() {window.open($App.ulr39, "_blank");};
 $scope.Headline64_click = function() {window.open($App.ulr40, "_blank");};
+$scope.PushButton14_click = function() {$scope.GotoPage( "PrayerReps" );};
 });
 NeoApp.controller("Records-2026_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
 $App.NAB.PageNumber = 2;
