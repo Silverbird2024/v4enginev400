@@ -12,13 +12,13 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #Headline146 {position:absolute;left:35px;top:29px;width:205px;height:48px;margin:0;color:white}
 #Headline147 {position:absolute;left:12px;top:9px;width:351px;height:24px;margin:0;color:yellow;font-size:9pt;font-weight:600;text-align:center}
 #Headline147:hover {color:green}
-#Headline148 {position:absolute;left:14px;top:68px;width:239px;height:66px;margin:0;color:yellow;font-size:16pt;font-weight:600}
+#Headline148 {position:absolute;left:14px;top:68px;width:210px;height:35px;margin:0;color:yellow;font-size:16pt;font-weight:600}
 #Headline148:hover {color:white}
-#SVGicon1 {position:absolute;left:313px;top:78px;width:44px;height:36px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
+#SVGicon1 {position:absolute;left:311px;top:68px;width:44px;height:36px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
 #SVGicon1:hover {fill:#008000}
-#SVGicon47 {position:absolute;left:257px;top:70px;width:45px;height:47px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
+#SVGicon47 {position:absolute;left:261px;top:67px;width:39px;height:37px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
 #SVGicon47:hover {fill:#008000}
-#SVGicon48 {position:absolute;left:253px;top:26px;width:56px;height:36px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
+#SVGicon48 {position:absolute;left:257px;top:26px;width:45px;height:32px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
 #SVGicon48:hover {fill:#008000}
 #Headline30 {position:absolute;left:322px;top:25px;width:31px;height:39px;margin:0;color:#A8A8A8;font-weight:800}
 #Headline30:hover {color:#00FF00}
@@ -299,8 +299,35 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #Headline66 {position:absolute;left:16px;top:907px;width:333px;height:24px;margin:0;color:WHITE;font-size:11pt;font-weight:600;text-align:center}
 #Headline66:hover {color:#FFFF00}
 #PushButton14 {position:absolute;left:17px;top:1253px;width:332px;height:37px;margin:0;}
-#Headline125 {position:absolute;left:228px;top:79px;width:20px;height:39px;margin:0;color:#A8A8A8;font-weight:800}
+#Headline125 {position:absolute;left:330px;top:108px;width:20px;height:39px;margin:0;color:#A8A8A8;font-weight:800}
 #Headline125:hover {color:#00FF00}
+#Headline127 {position:absolute;left:17px;top:105px;width:127px;height:21px;margin:0;color:#00FFFF;font-size:12pt}
+#Headline135 {position:absolute;left:146px;top:105px;width:158px;height:21px;margin:0;color:#FABC02;font-size:12pt}
+#Evening {position:relative;width:100%;height:100%;overflow:auto;;background-color:#383838}
+#SVGicon65 {position:absolute;left:61px;top:6px;width:255px;height:177px;margin:0;fill:#FFFFFF;opacity:0.41;stroke:black;stroke-dasharray:5,5;stroke-width:1px}
+#SVGicon66 {position:absolute;left:68px;top:14px;width:238px;height:153px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
+#Ellipse2 {position:absolute;left:9px;top:107px;width:359px;height:105px;margin:0;fill:#008000;stroke:black;stroke-width:1px}
+#Rectangle2 {position:absolute;left:0px;top:135px;width:373px;height:101px;margin:0;fill:#383838;stroke-width:1px}
+#Headline154 {position:absolute;left:129px;top:114px;width:114px;height:22px;margin:0;color:#00FFFF;font-size:12pt;font-weight:800;text-align:center}
+#TextArea18 {position:absolute;left:16px;top:165px;width:340px;height:691px;margin:0;color:white;font-family:Times New Roman,Times,serif;font-size:11pt;background-color:#383838}
+#SVGicon67 {position:absolute;left:340px;top:64px;width:21px;height:20px;margin:0;fill:#FFFFFF;stroke:black;stroke-width:1px}
+#SVGicon68 {position:absolute;left:288px;top:48px;width:21px;height:20px;margin:0;fill:#FFFFFF;stroke:black;stroke-width:1px}
+#SVGicon69 {position:absolute;left:50px;top:70px;width:21px;height:20px;margin:0;fill:#FFFFFF;stroke:black;stroke-width:1px}
+#SVGicon70 {position:absolute;left:77px;top:20px;width:21px;height:20px;margin:0;fill:#FFFFFF;stroke:black;stroke-width:1px}
+#SVGicon71 {position:absolute;left:10px;top:106px;width:21px;height:20px;margin:0;fill:#FFFFFF;stroke:black;stroke-width:1px}
+#Headline155 {position:absolute;left:259px;top:7px;width:105px;height:36px;margin:0;color:white}
+#Headline156 {position:absolute;left:32px;top:141px;width:308px;height:22px;margin:0;color:#00FFFF;font-size:12pt;font-weight:800;text-align:center}
+#morning {position:relative;width:100%;height:100%;overflow:auto;;background-color:#383838}
+#Rectangle4 {position:absolute;left:0px;top:-1px;width:377px;height:168px;margin:0;fill:#00FFFF;opacity:0.42;stroke-width:1px}
+#SVGicon64 {position:absolute;left:61px;top:6px;width:255px;height:177px;margin:0;fill:#FABC02;opacity:0.41;stroke:yellow;stroke-dasharray:5,5;stroke-width:1px}
+#SVGicon63 {position:absolute;left:68px;top:14px;width:238px;height:153px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
+#Ellipse1 {position:absolute;left:9px;top:107px;width:359px;height:105px;margin:0;fill:#008000;stroke:black;stroke-width:1px}
+#Rectangle1 {position:absolute;left:0px;top:135px;width:373px;height:101px;margin:0;fill:#383838;stroke-width:1px}
+#Headline150 {position:absolute;left:129px;top:114px;width:114px;height:22px;margin:0;color:orange;font-size:12pt;font-weight:800;text-align:center}
+#Headline153 {position:absolute;left:32px;top:141px;width:308px;height:22px;margin:0;color:orange;font-size:12pt;font-weight:800;text-align:center}
+#Headline151 {position:absolute;left:2px;top:3px;width:118px;height:22px;margin:0;color:white;font-size:10pt}
+#Headline159 {position:absolute;left:259px;top:7px;width:105px;height:36px;margin:0;color:white}
+#TextArea17 {position:absolute;left:16px;top:165px;width:340px;height:691px;margin:0;color:white;font-family:Times New Roman,Times,serif;font-size:11pt;background-color:#383838}
 #Indexwrite {position:relative;width:100%;height:100%;overflow:auto;;background-color:#A8A8A8}
 #Container-index-f01 {position:absolute;left:0px;top:80px;width:362px;height:2755px;margin:0;border-width:1px;border-style:solid;background-color:#fff;;overflow-x:hidden;overflow-y:hidden}
 #Headline1157 {position:absolute;left:105px;top:12px;width:232px;height:47px;margin:0;}
@@ -1628,7 +1655,7 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #PushButton757 {position:absolute;left:271px;top:19px;width:32px;height:35px;margin:0;color:blue;font-size:7pt}
 #Headline1072 {position:absolute;left:19px;top:24px;width:245px;height:33px;margin:0;color:white;font-size:14pt;font-weight:600;text-align:center}
 #Headline1072:hover {color:blue}
-#TextArea701 {position:absolute;left:25px;top:74px;width:323px;height:507px;margin:0;font-family:Times New Roman,Times,serif;font-size:10pt}
+#TextArea701 {position:absolute;left:25px;top:74px;width:323px;height:417px;margin:0;font-family:Times New Roman,Times,serif;font-size:10pt}
 #TextInput305 {position:absolute;left:175px;top:604px;width:172px;height:26px;margin:0;}
 #TextInput306 {position:absolute;left:25px;top:604px;width:145px;height:26px;margin:0;}
 #Headline131 {position:absolute;left:16px;top:640px;width:71px;height:18px;margin:0;color:white;font-size:10pt;font-weight:600;text-align:center}
@@ -1638,6 +1665,9 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #Headline132 {position:absolute;left:174px;top:585px;width:42px;height:17px;margin:0;color:white;font-family:Times New Roman,Times,serif;font-size:9pt;text-align:center}
 #Headline132:hover {color:#FFFF00}
 #PushButton15 {position:absolute;left:315px;top:52px;width:34px;height:22px;margin:0;font-size:7pt;opacity:0.32}
+#TextArea19 {position:absolute;left:24px;top:517px;width:323px;height:60px;margin:0;color:#00FFFF;font-family:Times New Roman,Times,serif;font-size:10pt;background-color:#383838}
+#Headline157 {position:absolute;left:25px;top:498px;width:71px;height:18px;margin:0;color:#00FFFF;font-size:10pt;font-weight:600;text-align:center}
+#Headline157:hover {color:#FF0000}
 #where2 {position:relative;width:100%;height:100%;overflow:auto;;background-color:#383838}
 #SVGicon240 {position:absolute;left:306px;top:16px;width:52px;height:36px;margin:0;stroke:black;stroke-width:1px;fill:#A8A8A8}
 #PushButton269 {position:absolute;left:271px;top:19px;width:32px;height:35px;margin:0;color:blue;font-size:7pt}
