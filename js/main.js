@@ -6,6 +6,8 @@ $App.NAB={PageList:["landinghome","Evening","v4rules","morning","Records-2026","
 $scope.landinghome_pageenter = function() {$App.VERSION = "V4.096 29/7/26";
 $App.read1 = 1.1;
 $App.read2 = 1.1;
+$App.ulr1c = localStorage.getItem("ulr1c");
+$App.ulr1b = localStorage.getItem("ulr1b");
 $App.freezecontent = localStorage.getItem("freezecontent");
 $App.freezecontent1 = localStorage.getItem("freezecontent1");
 $App.freezecontent2 = localStorage.getItem("freezecontent2");
@@ -632,8 +634,8 @@ NeoApp.controller("where1_Ctrl", function($scope,$rootScope,$route,$timeout,$fil
 $App.NAB.PageNumber = 6;
 $App.NAB.PageID = "where1";
 $scope.TextInput275_change = function() {localStorage.setItem("where1",$App.where1);};
-$scope.SVGicon243_click = function() {if ($App.freezecontent1 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
-$scope.AlertBox("Unfreeze","Please Enter Unfreeze","primary",null );
+$scope.SVGicon243_click = function() {if ($App.freezecontent1 == "") {
+$scope.AlertBox("Unfreeze","Please Enter Unfreeze text and press freeze text and try again or use freeze button","primary",null );
 } else {
 $scope.GotoPage( "landinghome" );
 };};
@@ -648,6 +650,23 @@ localStorage.setItem("where1a",$App.where1a);};
 $scope.TextArea19_change = function() {localStorage.setItem("freezecontent1",$App.freezecontent1);};
 $scope.Headline157_click = function() {$App.freezecontent1 = "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze";
 localStorage.setItem("freezecontent1",$App.freezecontent1);};
+$scope.PushButton34_click = function() {if ($App.freezecontent1 == "") {
+$scope.AlertBox("Unfreeze","Please Enter Unfreeze text and press freeze text and try again","primary",null );
+} else {
+$scope.GotoPage( "landinghome" );
+$scope.SetObjectStyle("Headline75","color","#00FFFF");
+$scope.SetObjectStyle("TextArea19","color","#00FFFF");
+$scope.ObjectToBack("PushButton34");
+$App.ulr1c = "Frozen";
+localStorage.setItem("ulr1c",$App.ulr1c);
+};};
+$scope.PushButton35_click = function() {$scope.GotoPage( "landinghome" );
+$scope.SetObjectStyle("Headline75","color","#FFFFFF");
+$scope.SetObjectStyle("TextArea19","color","#FFFFFF");
+$scope.ObjectToBack("PushButton35");
+$App.ulr1c = "Un-Frozen";
+localStorage.setItem("ulr1c",$App.ulr1c);};
+$scope.TextInput64_change = function() {localStorage.setItem("ulr1b",$App.ulr1b);};
 });
 NeoApp.controller("where2_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
 $App.NAB.PageNumber = 7;
