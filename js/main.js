@@ -1,8 +1,8 @@
-var NeoApp=angular.module("NeoApp",["ngAnimate","ngRoute","ngSanitize","ngTouch","ui.bootstrap"],function($interpolateProvider){$interpolateProvider.startSymbol("[");$interpolateProvider.endSymbol("]");});NeoApp.config(["$routeProvider",function($routeProvider,$scope,$rootScope){$routeProvider.when("/landinghome",{templateUrl:"landinghome",controller:"landinghome_Ctrl"});$routeProvider.when("/Evening",{templateUrl:"Evening",controller:"Evening_Ctrl"});$routeProvider.when("/v4rules",{templateUrl:"v4rules",controller:"v4rules_Ctrl"});$routeProvider.when("/morning",{templateUrl:"morning",controller:"morning_Ctrl"});$routeProvider.when("/Records-2026",{templateUrl:"Records-2026",controller:"Records-2026_Ctrl"});$routeProvider.when("/where1",{templateUrl:"where1",controller:"where1_Ctrl"});$routeProvider.when("/where2",{templateUrl:"where2",controller:"where2_Ctrl"});$routeProvider.when("/where3",{templateUrl:"where3",controller:"where3_Ctrl"});$routeProvider.when("/where4",{templateUrl:"where4",controller:"where4_Ctrl"});$routeProvider.when("/where5",{templateUrl:"where5",controller:"where5_Ctrl"});$routeProvider.when("/where6",{templateUrl:"where6",controller:"where6_Ctrl"});$routeProvider.when("/where7",{templateUrl:"where7",controller:"where7_Ctrl"});$routeProvider.when("/where8",{templateUrl:"where8",controller:"where8_Ctrl"});$routeProvider.when("/where9",{templateUrl:"where9",controller:"where9_Ctrl"});$routeProvider.when("/where10",{templateUrl:"where10",controller:"where10_Ctrl"});$routeProvider.when("/where11",{templateUrl:"where11",controller:"where11_Ctrl"});$routeProvider.when("/where12",{templateUrl:"where12",controller:"where12_Ctrl"});$routeProvider.when("/where13",{templateUrl:"where13",controller:"where13_Ctrl"});$routeProvider.when("/where14",{templateUrl:"where14",controller:"where14_Ctrl"});$routeProvider.when("/where15",{templateUrl:"where15",controller:"where15_Ctrl"});$routeProvider.when("/where16",{templateUrl:"where16",controller:"where16_Ctrl"});$routeProvider.when("/where17",{templateUrl:"where17",controller:"where17_Ctrl"});$routeProvider.when("/where18",{templateUrl:"where18",controller:"where18_Ctrl"});$routeProvider.when("/where19",{templateUrl:"where19",controller:"where19_Ctrl"});$routeProvider.when("/where20",{templateUrl:"where20",controller:"where20_Ctrl"});$routeProvider.when("/where21",{templateUrl:"where21",controller:"where21_Ctrl"});$routeProvider.when("/where22",{templateUrl:"where22",controller:"where22_Ctrl"});$routeProvider.when("/where23",{templateUrl:"where23",controller:"where23_Ctrl"});$routeProvider.when("/where24",{templateUrl:"where24",controller:"where24_Ctrl"});$routeProvider.when("/where25",{templateUrl:"where25",controller:"where25_Ctrl"});$routeProvider.when("/where26",{templateUrl:"where26",controller:"where26_Ctrl"});$routeProvider.when("/where27",{templateUrl:"where27",controller:"where27_Ctrl"});$routeProvider.when("/where28",{templateUrl:"where28",controller:"where28_Ctrl"});$routeProvider.when("/where29",{templateUrl:"where29",controller:"where29_Ctrl"});$routeProvider.when("/where30",{templateUrl:"where30",controller:"where30_Ctrl"});$routeProvider.when("/where31",{templateUrl:"where31",controller:"where31_Ctrl"});$routeProvider.when("/where32",{templateUrl:"where32",controller:"where32_Ctrl"});$routeProvider.when("/where33",{templateUrl:"where33",controller:"where33_Ctrl"});$routeProvider.when("/where34",{templateUrl:"where34",controller:"where34_Ctrl"});$routeProvider.when("/where35",{templateUrl:"where35",controller:"where35_Ctrl"});$routeProvider.when("/where36",{templateUrl:"where36",controller:"where36_Ctrl"});$routeProvider.when("/where37",{templateUrl:"where37",controller:"where37_Ctrl"});$routeProvider.when("/where38",{templateUrl:"where38",controller:"where38_Ctrl"});$routeProvider.when("/where39",{templateUrl:"where39",controller:"where39_Ctrl"});$routeProvider.when("/where40",{templateUrl:"where40",controller:"where40_Ctrl"});$routeProvider.when("/where41",{templateUrl:"where41",controller:"where41_Ctrl"});$routeProvider.when("/where42",{templateUrl:"where42",controller:"where42_Ctrl"});$routeProvider.when("/where43",{templateUrl:"where43",controller:"where43_Ctrl"});$routeProvider.when("/where44",{templateUrl:"where44",controller:"where44_Ctrl"});$routeProvider.when("/where45",{templateUrl:"where45",controller:"where45_Ctrl"});$routeProvider.when("/where46",{templateUrl:"where46",controller:"where46_Ctrl"});$routeProvider.when("/where47",{templateUrl:"where47",controller:"where47_Ctrl"});$routeProvider.when("/where48",{templateUrl:"where48",controller:"where48_Ctrl"});$routeProvider.when("/V4DiaryVersionRecord",{templateUrl:"V4DiaryVersionRecord",controller:"V4DiaryVersionRecord_Ctrl"});$routeProvider.when("/VERSION",{templateUrl:"VERSION",controller:"VERSION_Ctrl"});$routeProvider.when("/PrayerReps",{templateUrl:"PrayerReps",controller:"PrayerReps_Ctrl"});$routeProvider.when("/DailyReps1",{templateUrl:"DailyReps1",controller:"DailyReps1_Ctrl"});$routeProvider.when("/Prayer1",{templateUrl:"Prayer1",controller:"Prayer1_Ctrl"});$routeProvider.when("/Allvariables",{templateUrl:"Allvariables",controller:"Allvariables_Ctrl"});$routeProvider.otherwise({redirectTo:"/landinghome"});}]);NeoApp.filter("checkmark",function(){return function(input){return input?"\u2713":"\u2718";};});NeoApp.filter("element",function(){return function(input,idx1,idx2){idx1=idx1||0;if(input&&input.constructor===Array){if(idx2){return input[idx1,idx2];}else{return input[idx1];};};return"";};});NeoApp.filter("string",function(){return function(input){if(input&&input.constructor===Array)return input.toString();if(input)return input;return"";};});NeoApp.filter("default",function(){return function(input,defValue){if(!input)return defValue;return input;};});NeoApp.filter("trustUrl",function($sce){return function(url){return $sce.trustAsResourceUrl(url);};});NeoApp.filter('bool',function(){return function(input,valueTrue,valueFalse){return input!==true?valueFalse:valueTrue;};});NeoApp.filter('splitLt',function(){return function(str,delimeter){var p=str.indexOf(delimeter);return(p>-1)?str.substring(0,p):str;};});NeoApp.filter('splitRt',function(){return function(str,delimeter){var p=str.indexOf(delimeter);return(p>-1)?str.substring(p+1):str;};});NeoApp.controller("NeoApp_CoreCtrl",function($scope,$rootScope,$location,$route,$modal,$window,$timeout,$interval,$http,$filter,$compile,$animate){$App=$rootScope;$App.$on("$locationChangeStart",function(event,newUrl,oldUrl){var newPg=newUrl.substr(newUrl.lastIndexOf("/")+1);var oldPg=oldUrl.substr(oldUrl.lastIndexOf("/")+1);if(newPg=="!"){event.preventDefault();};if(newPg=="landinghome"){$timeout($scope.landinghome_pageenter);};if(newPg=="where1"){$timeout($scope.where1_pageenter);};if(newPg=="where2"){$timeout($scope.where2_pageenter);};if(newPg=="where41"){$timeout($scope.where41_pageenter);};if(newPg=="where42"){$timeout($scope.where42_pageenter);};if(newPg=="where43"){$timeout($scope.where43_pageenter);};if(newPg=="where44"){$timeout($scope.where44_pageenter);};if(newPg=="where45"){$timeout($scope.where45_pageenter);};if(newPg=="where46"){$timeout($scope.where46_pageenter);};if(newPg=="where47"){$timeout($scope.where47_pageenter);};if(newPg=="where48"){$timeout($scope.where48_pageenter);};if(newPg=="Prayer1"){$timeout($scope.Prayer1_pageenter);};});
+var NeoApp=angular.module("NeoApp",["ngAnimate","ngRoute","ngSanitize","ngTouch","ui.bootstrap"],function($interpolateProvider){$interpolateProvider.startSymbol("[");$interpolateProvider.endSymbol("]");});NeoApp.config(["$routeProvider",function($routeProvider,$scope,$rootScope){$routeProvider.when("/landinghome",{templateUrl:"landinghome",controller:"landinghome_Ctrl"});$routeProvider.when("/wheretemplate1",{templateUrl:"wheretemplate1",controller:"wheretemplate1_Ctrl"});$routeProvider.when("/Evening",{templateUrl:"Evening",controller:"Evening_Ctrl"});$routeProvider.when("/v4rules",{templateUrl:"v4rules",controller:"v4rules_Ctrl"});$routeProvider.when("/morning",{templateUrl:"morning",controller:"morning_Ctrl"});$routeProvider.when("/Records-2026",{templateUrl:"Records-2026",controller:"Records-2026_Ctrl"});$routeProvider.when("/where1",{templateUrl:"where1",controller:"where1_Ctrl"});$routeProvider.when("/where2",{templateUrl:"where2",controller:"where2_Ctrl"});$routeProvider.when("/where3",{templateUrl:"where3",controller:"where3_Ctrl"});$routeProvider.when("/where4",{templateUrl:"where4",controller:"where4_Ctrl"});$routeProvider.when("/where5",{templateUrl:"where5",controller:"where5_Ctrl"});$routeProvider.when("/where6",{templateUrl:"where6",controller:"where6_Ctrl"});$routeProvider.when("/where7",{templateUrl:"where7",controller:"where7_Ctrl"});$routeProvider.when("/where8",{templateUrl:"where8",controller:"where8_Ctrl"});$routeProvider.when("/where9",{templateUrl:"where9",controller:"where9_Ctrl"});$routeProvider.when("/where10",{templateUrl:"where10",controller:"where10_Ctrl"});$routeProvider.when("/where11",{templateUrl:"where11",controller:"where11_Ctrl"});$routeProvider.when("/where12",{templateUrl:"where12",controller:"where12_Ctrl"});$routeProvider.when("/where13",{templateUrl:"where13",controller:"where13_Ctrl"});$routeProvider.when("/where14",{templateUrl:"where14",controller:"where14_Ctrl"});$routeProvider.when("/where15",{templateUrl:"where15",controller:"where15_Ctrl"});$routeProvider.when("/where16",{templateUrl:"where16",controller:"where16_Ctrl"});$routeProvider.when("/where17",{templateUrl:"where17",controller:"where17_Ctrl"});$routeProvider.when("/where18",{templateUrl:"where18",controller:"where18_Ctrl"});$routeProvider.when("/where19",{templateUrl:"where19",controller:"where19_Ctrl"});$routeProvider.when("/where20",{templateUrl:"where20",controller:"where20_Ctrl"});$routeProvider.when("/where21",{templateUrl:"where21",controller:"where21_Ctrl"});$routeProvider.when("/where22",{templateUrl:"where22",controller:"where22_Ctrl"});$routeProvider.when("/where23",{templateUrl:"where23",controller:"where23_Ctrl"});$routeProvider.when("/where24",{templateUrl:"where24",controller:"where24_Ctrl"});$routeProvider.when("/where25",{templateUrl:"where25",controller:"where25_Ctrl"});$routeProvider.when("/where26",{templateUrl:"where26",controller:"where26_Ctrl"});$routeProvider.when("/where27",{templateUrl:"where27",controller:"where27_Ctrl"});$routeProvider.when("/where28",{templateUrl:"where28",controller:"where28_Ctrl"});$routeProvider.when("/where29",{templateUrl:"where29",controller:"where29_Ctrl"});$routeProvider.when("/where30",{templateUrl:"where30",controller:"where30_Ctrl"});$routeProvider.when("/where31",{templateUrl:"where31",controller:"where31_Ctrl"});$routeProvider.when("/where32",{templateUrl:"where32",controller:"where32_Ctrl"});$routeProvider.when("/where33",{templateUrl:"where33",controller:"where33_Ctrl"});$routeProvider.when("/where34",{templateUrl:"where34",controller:"where34_Ctrl"});$routeProvider.when("/where35",{templateUrl:"where35",controller:"where35_Ctrl"});$routeProvider.when("/where36",{templateUrl:"where36",controller:"where36_Ctrl"});$routeProvider.when("/where37",{templateUrl:"where37",controller:"where37_Ctrl"});$routeProvider.when("/where38",{templateUrl:"where38",controller:"where38_Ctrl"});$routeProvider.when("/where39",{templateUrl:"where39",controller:"where39_Ctrl"});$routeProvider.when("/where40",{templateUrl:"where40",controller:"where40_Ctrl"});$routeProvider.when("/where41",{templateUrl:"where41",controller:"where41_Ctrl"});$routeProvider.when("/where42",{templateUrl:"where42",controller:"where42_Ctrl"});$routeProvider.when("/where43",{templateUrl:"where43",controller:"where43_Ctrl"});$routeProvider.when("/where44",{templateUrl:"where44",controller:"where44_Ctrl"});$routeProvider.when("/where45",{templateUrl:"where45",controller:"where45_Ctrl"});$routeProvider.when("/where46",{templateUrl:"where46",controller:"where46_Ctrl"});$routeProvider.when("/where47",{templateUrl:"where47",controller:"where47_Ctrl"});$routeProvider.when("/where48",{templateUrl:"where48",controller:"where48_Ctrl"});$routeProvider.when("/V4DiaryVersionRecord",{templateUrl:"V4DiaryVersionRecord",controller:"V4DiaryVersionRecord_Ctrl"});$routeProvider.when("/VERSION",{templateUrl:"VERSION",controller:"VERSION_Ctrl"});$routeProvider.when("/PrayerReps",{templateUrl:"PrayerReps",controller:"PrayerReps_Ctrl"});$routeProvider.when("/DailyReps1",{templateUrl:"DailyReps1",controller:"DailyReps1_Ctrl"});$routeProvider.when("/Prayer1",{templateUrl:"Prayer1",controller:"Prayer1_Ctrl"});$routeProvider.when("/Allvariables",{templateUrl:"Allvariables",controller:"Allvariables_Ctrl"});$routeProvider.otherwise({redirectTo:"/landinghome"});}]);NeoApp.filter("checkmark",function(){return function(input){return input?"\u2713":"\u2718";};});NeoApp.filter("element",function(){return function(input,idx1,idx2){idx1=idx1||0;if(input&&input.constructor===Array){if(idx2){return input[idx1,idx2];}else{return input[idx1];};};return"";};});NeoApp.filter("string",function(){return function(input){if(input&&input.constructor===Array)return input.toString();if(input)return input;return"";};});NeoApp.filter("default",function(){return function(input,defValue){if(!input)return defValue;return input;};});NeoApp.filter("trustUrl",function($sce){return function(url){return $sce.trustAsResourceUrl(url);};});NeoApp.filter('bool',function(){return function(input,valueTrue,valueFalse){return input!==true?valueFalse:valueTrue;};});NeoApp.filter('splitLt',function(){return function(str,delimeter){var p=str.indexOf(delimeter);return(p>-1)?str.substring(0,p):str;};});NeoApp.filter('splitRt',function(){return function(str,delimeter){var p=str.indexOf(delimeter);return(p>-1)?str.substring(p+1):str;};});NeoApp.controller("NeoApp_CoreCtrl",function($scope,$rootScope,$location,$route,$modal,$window,$timeout,$interval,$http,$filter,$compile,$animate){$App=$rootScope;$App.$on("$locationChangeStart",function(event,newUrl,oldUrl){var newPg=newUrl.substr(newUrl.lastIndexOf("/")+1);var oldPg=oldUrl.substr(oldUrl.lastIndexOf("/")+1);if(newPg=="!"){event.preventDefault();};if(newPg=="landinghome"){$timeout($scope.landinghome_pageenter);};if(newPg=="where1"){$timeout($scope.where1_pageenter);};if(newPg=="where2"){$timeout($scope.where2_pageenter);};if(newPg=="where41"){$timeout($scope.where41_pageenter);};if(newPg=="where42"){$timeout($scope.where42_pageenter);};if(newPg=="where43"){$timeout($scope.where43_pageenter);};if(newPg=="where44"){$timeout($scope.where44_pageenter);};if(newPg=="where45"){$timeout($scope.where45_pageenter);};if(newPg=="where46"){$timeout($scope.where46_pageenter);};if(newPg=="where47"){$timeout($scope.where47_pageenter);};if(newPg=="where48"){$timeout($scope.where48_pageenter);};if(newPg=="Prayer1"){$timeout($scope.Prayer1_pageenter);};});
 $scope.SetError=function(msg){throw msg;};$scope.Refresh=function(){$timeout(angular.noop);};$scope.AddFont=function(fontName,fontPath){neotempstyle=document.createElement("style");var position=fontPath.lastIndexOf("/");if(position!=-1){position++;}else{position=0;}var extPosition=fontPath.lastIndexOf(".");extPosition++;var extension=fontPath.substr(extPosition);if(extension=="ttf"){extension="truetype";}if(window.location.href.indexOf("file://")!=-1){neotempstyle.textContent='@font-face{font-family: "'+fontName+'";src: url("'+fontPath+'") format("'+extension+'");}';}else{fontPath=fontPath.substr(position);neotempstyle.textContent='@font-face{font-family: "'+fontName+'";src: url("./fonts/'+fontPath+'") format("'+extension+'");}';}document.head.append(neotempstyle);};$scope.GetOrientation=function(){if($window.orientation){if(Math.abs(window.orientation)===90){return"Landscape";}else{return"Portrait";}}else{if($window.innerWidth>=$window.innerHeight){return"Landscape";}else{return"Portrait";}}};$scope.GotoPageNum=function(pgNum){if(pgNum>0&&pgNum<=$App.NAB.PageList.length){if($App.NAB.PageEnterEffect[pgNum-1]){$App.NAB._pageEffect=" animate enter-"+$App.NAB.PageEnterEffect[pgNum-1]+" exit-"+($App.NAB.PageExitEffect[pgNum-1]||"fadeOut");}else{$App.NAB._pageEffect="";}$timeout(function(){$location.path('/'+$App.NAB.PageList[pgNum-1]);});}else{$scope.SetError('Invalid page.');}};$scope.GotoPage=function(pgId){$scope.GotoPageNum($App.NAB.PageList.indexOf(pgId)+1);};$scope.GotoFirstPage=function(){$scope.GotoPageNum(1);};$scope.GotoLastPage=function(){$scope.GotoPageNum($App.NAB.PageList.length);};$scope.GotoNextPage=function(){var pgNum=$App.NAB.PageNumber;if(pgNum<$App.NAB.PageList.length){$scope.GotoPageNum(pgNum+1);return true;}return false;};$scope.GotoPrevPage=function(){var pgNum=$App.NAB.PageNumber;if(pgNum>1){$scope.GotoPageNum(pgNum-1);return true;}return false;};function makeSVG(tag,attrs){var el=document.createElementNS('http://www.w3.org/2000/svg',tag);for(var k in attrs)el.setAttribute(k,attrs[k]);return el;};function addSvgNode(objId,svgNode){if(document.getElementById(objId).tagName=="svg"){document.getElementById(objId).appendChild(svgNode);}else{document.getElementById(objId).getElementsByTagName('svg')[0].appendChild(svgNode);}};$scope.DrawCircle=function DrawCircle(objId,svgName,cx,cy,circleRadio,strokeColor,strokeWidth,fillColor){$App[svgName]=makeSVG('circle',{'id':svgName,'VisualNEOWebName':svgName,'cx':cx,'cy':cy,'r':circleRadio,'stroke':strokeColor,'stroke-width':strokeWidth,'fill':fillColor});addSvgNode(objId,$App[svgName]);};$scope.DrawEllipse=function DrawEllipse(objId,svgName,cx,cy,rx,ry,strokeColor,strokeWidth,fillColor){$App[svgName]=makeSVG('ellipse',{'id':svgName,'VisualNEOWebName':svgName,'cx':cx,'cy':cy,'rx':rx,'ry':ry,'stroke':strokeColor,'stroke-width':strokeWidth,'fill':fillColor});addSvgNode(objId,$App[svgName]);};$scope.DrawRect=function DrawRect(objId,svgName,posx,posy,width,height,strokeColor,strokeWidth,fillColor){$App[svgName]=makeSVG('rect',{'id':svgName,'VisualNEOWebName':svgName,'x':posx,'y':posy,'width':width,'height':height,'stroke':strokeColor,'stroke-width':strokeWidth,'fill':fillColor});addSvgNode(objId,$App[svgName]);};$scope.DrawPolygon=function DrawPolygon(objId,svgName,points,strokeColor,strokeWidth,fillColor){$App[svgName]=makeSVG('polygon',{'id':svgName,'VisualNEOWebName':svgName,'points':points,'stroke':strokeColor,'stroke-width':strokeWidth,'fill':fillColor});addSvgNode(objId,$App[svgName]);};$scope.DrawPath=function DrawPath(objId,svgName,path,strokeColor,strokeWidth,fillColor){$App[svgName]=makeSVG('path',{'id':svgName,'VisualNEOWebName':svgName,'d':path,'stroke':strokeColor,'stroke-width':strokeWidth,'fill':fillColor});addSvgNode(objId,$App[svgName]);};$scope.DrawPolyLine=function DrawPolyLine(objId,svgName,points,strokeColor,strokeWidth){$App[svgName]=makeSVG('polyline',{'id':svgName,'VisualNEOWebName':svgName,'points':points,'stroke':strokeColor,'stroke-width':strokeWidth,'fill':'none'});addSvgNode(objId,$App[svgName]);};$scope.DrawLine=function DrawLine(objId,svgName,x1,y1,x2,y2,strokeColor,strokeWidth){$App[svgName]=makeSVG('line',{'id':svgName,'VisualNEOWebName':svgName,'x1':x1,'y1':y1,'x2':x2,'y2':y2,'stroke':strokeColor,'stroke-width':strokeWidth});addSvgNode(objId,$App[svgName]);};$scope.DrawImage=function DrawImage(objId,svgName,fileName,x,y,width,height){$App[svgName]=makeSVG('image',{'id':svgName,'VisualNEOWebName':svgName,'x':x,'y':y,'width':width,'height':height,'xlink:href':''});$App[svgName].setAttributeNS("http://www.w3.org/1999/xlink","xlink:href",""+fileName+"");addSvgNode(objId,$App[svgName]);};$scope.DrawText=function DrawText(objId,svgName,theText,posx,posy,fillColor,fontSize,fontFamily,angle){$App[svgName]=makeSVG('text',{'id':svgName,'VisualNEOWebName':svgName,'x':posx,'y':posy,'stroke-width':0,'fill':fillColor,'font-size':fontSize,'font-family':fontFamily,'transform':'rotate('+angle+' '+posx+' '+posy+')'});$App[svgName].textContent=theText;addSvgNode(objId,$App[svgName]);};$scope.DrawClear=function DrawClear(objId){var n=0;$("#"+objId).children().each(function(){if(n!=0){$(this).remove();}n++;});};$scope.OnMouseEvent=function(objId,eventName,subroutine){if(eventName=="contextmenu"){if($App.NAB[objId]){$App.NAB[objId].on(eventName,function(e){e.preventDefault();subroutine;return;});}$("#"+objId).on(eventName,function(e){e.preventDefault();subroutine;return;});}if($App.NAB[objId]){$App.NAB[objId].on(eventName,subroutine);return;}$("#"+objId).on(eventName,subroutine);};$scope.RemoveOnMouseEvent=function(objId,eventName){if($App.NAB[objId]){$App.NAB[objId].off(eventName);return;}$("#"+objId).off(eventName);};$scope.OnTouchEvent=function(objId,eventName,subroutine){if($App.NAB[objId]){$App.NAB[objId].on(eventName,subroutine);return;}$("#"+objId).on(eventName,subroutine);};$scope.RemoveOnTouchEvent=function(objId,eventName){if($App.NAB[objId]){$App.NAB[objId].off(eventName);return;}$("#"+objId).off(eventName);};$scope.ShowObject=function(objId,effect,speed){if($App.NAB[objId]){$App.NAB[objId].show(speed);return;}if(!effect||effect.toLowerCase()=='none'){$App.NAB[objId+'_effect']='';}else{if(speed)effect=effect+' speed-'+speed*50;$App.NAB[objId+'_effect']='animate enter-'+effect;}$timeout(function(){var name=objId+'_hidden';if($App.NAB[name])delete $App.NAB[name];});};$scope.HideObject=function(objId,effect,speed){if($App.NAB[objId]){$App.NAB[objId].hide(speed);return;}if(!effect||effect.toLowerCase()=='none'){$App.NAB[objId+'_effect']='';}else{if(speed)effect=effect+' speed-'+speed*50;$App.NAB[objId+'_effect']='animate exit-'+effect;}$timeout(function(){$App.NAB[objId+'_hidden']=true;});};$scope.DisableObject=function(objId,value){var name=objId+'_disabled';if(value){$App.NAB[name]=value;}else{if($App.NAB[name])delete $App.NAB[name];}};$scope.ClipObjectPolygon=function(objId,polygonId){var points=$("#"+polygonId).html();points=points.replace('<polygon vector-effect="non-scaling-stroke" points="',"");points=points.replace('"></polygon>','');coords=points.split(",");var puntos="";for(i=0;i<coords.length;i=i+2){if(i!=coords.length-2){puntos=puntos+coords[i]+"px "+coords[i+1]+"px,";}else{puntos=puntos+coords[i]+"px "+coords[i+1]+"px";}}$("#"+objId).css("clip-path","polygon("+puntos+")");};$scope.ClipObjectPath=function(objId,shape){if(shape=="circle"){$("#"+objId).css("clip-path","circle(50% at 50% 50%)");}else if(shape=="triangle"){$("#"+objId).css("clip-path","polygon(50% 0%, 0% 100%, 100% 100%)");}else if(shape=="rhombus"){$("#"+objId).css("clip-path","polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)");}else if(shape=="pentagon"){$("#"+objId).css("clip-path","polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)");}else{$("#"+objId).css("clip-path",shape);}};$scope.SetObjectStyle=function(objId,selector,value){if($App.NAB[objId]){$App.NAB[objId].css(selector,value);return;}if($App[objId]){$("#"+objId).css(selector,value);return;}var name=objId+'_style';if(!$App.NAB[name])$App.NAB[name]={};if(value&&value.length>0){$App.NAB[name][selector]=value;}else{if($App.NAB[name][selector])delete $App.NAB[name][selector];if(jQuery.isEmptyObject($App.NAB[name]))delete $App.NAB[name];}};$scope.ClearObjectStyles=function(objId){var name=objId+'_style';if($App.NAB[name])delete $App.NAB[name];};$scope.GetObjectInfo=function(objId,info){if($App.NAB[objId]){return $App.NAB[objId].css(info);}return $("#"+objId).css(info);};$scope.GetObjectXY=function(objId,xvar,yvar){var rect=document.getElementById($App.NAB.PageID).getBoundingClientRect();$App.PageLeft=rect.left;$App.PageTop=rect.top;var objeto=document.getElementById(objId).getBoundingClientRect();$App[xvar]=objeto.x-$App.PageLeft;$App[yvar]=objeto.y-$App.PageTop;};$scope.SetObjectHTML=function(objId,code){if($App.NAB[objId]){$App.NAB[objId].html(code);return;}var e=document.getElementById(objId);e.innerHTML=code;$compile(e)($scope);};$scope.GetObjectHTML=function(objId){if($App.NAB[objId]){return $App.NAB[objId].html();;}return document.getElementById(objId).innerHTML;};$scope.SetObjectAttribute=function(objId,AttrName,AttrValue){var element=$("#"+objId);if(AttrName==="src"){AttrName="ng-src";}var pendingChanges=$App.NAB['pendingChanges']||{};pendingChanges[objId]=pendingChanges[objId]||[];pendingChanges[objId].push({AttrName,AttrValue});$App.NAB['pendingChanges']=pendingChanges;$scope.applyPendingChanges();};$scope.applyPendingChanges=function(){var pendingChanges=$App.NAB['pendingChanges'];if(!pendingChanges||jQuery.isEmptyObject(pendingChanges)){return;}Object.keys(pendingChanges).forEach(function(objId){var element=$("#"+objId);if(element.length>0){pendingChanges[objId].forEach(function(change){element.attr(change.AttrName,change.AttrValue);$compile(element)($scope);});}});};$scope.GetObjectAttribute=function(objId,AttrName){if($App.NAB[objId]){return $App.NAB[objId].attr(AttrName);}return $("#"+objId).attr(AttrName);};$scope.SetObjectText=function(objId,code){if($App.NAB[objId]){$App.NAB[objId].text(code);return;}var e=document.getElementById(objId);e.innerText=code;$compile(e)($scope);};$scope.GetObjectText=function(objId){if($App.NAB[objId]){return $App.NAB[objId].text();}return document.getElementById(objId).innerText;};$scope.DuplicateObject=function(objId,objName,containerId){if($App.NAB[objName]){$App.NAB[objName].remove();delete $App.NAB[objName];}else{$("#"+objName).remove();delete $App.NAB[objName];}if($App.NAB[objId]){$App.NAB[objName]=$App.NAB[objId].clone().appendTo("#"+containerId);}else if($App[objId]){$App.NAB[objName]=$("#"+objId).clone().appendTo("#"+containerId);$App.NAB[objName].attr("id","");}else{$App.NAB[objName]=$("#"+objId).clone().appendTo("#"+containerId);}$App.NAB[objName].attr("VisualNEOWebName",objName);$App.NAB[objName].attr("ng-style","NAB."+objName+"_style");$App.NAB[objName].attr("ng-hide","NAB."+objName+"_hidden");$App.NAB[objName].attr("ng-disabled","NAB."+objName+"_disabled");var e=document.getElementById(containerId);$compile(e)($scope);};$scope.DuplicateObjectEx=function(objId,objName,containerId,objStyle){if($App.NAB[objName]){$App.NAB[objName].remove();delete $App.NAB[objName];}else{$("#"+objName).remove();delete $App.NAB[objName];}if($App.NAB[objId]){$App.NAB[objName]=$App.NAB[objId].clone().appendTo("#"+containerId);}else if($App[objId]){$App.NAB[objName]=$("#"+objId).clone().appendTo("#"+containerId);$App.NAB[objName].attr("id","");}else{$App.NAB[objName]=$("#"+objId).clone().appendTo("#"+containerId);$App.NAB[objName].attr("id",objName);$App.NAB[objName].atyle=document.getElementById(objId).style;}$App.NAB[objName].attr("VisualNEOWebName",objName);$App.NAB[objName].attr("ng-style","NAB."+objName+"_style");$App.NAB[objName].attr("ng-hide","NAB."+objName+"_hidden");$App.NAB[objName].attr("ng-disabled","NAB."+objName+"_disabled");$App.NAB[objName].attr("style",objStyle);var e=document.getElementById(containerId);$compile(e)($scope);};$scope.AnimateObjectCSS=function(objId,cssData,duration,delay,easing,callbackfn){if($App.NAB[objId]){$App.NAB[objId].delay(delay).animate(cssData,duration,easing,callbackfn);}else{$("#"+objId).delay(delay).animate(cssData,duration,easing,callbackfn);}};$scope.SetObjectCSS=function(objId,cssData){if($App.NAB[objId]){$App.NAB[objId].css(cssData);}else{$("#"+objId).css(cssData);}};$scope.CheckCollision=function(objId1,objId2){var x1=$("#"+objId1).offset().left;var y1=$("#"+objId1).offset().top;var h1=$("#"+objId1).outerHeight(true);var w1=$("#"+objId1).outerWidth(true);var b1=y1+h1;var r1=x1+w1;var x2=$("#"+objId2).offset().left;var y2=$("#"+objId2).offset().top;var h2=$("#"+objId2).outerHeight(true);var w2=$("#"+objId2).outerWidth(true);var b2=y2+h2;var r2=x2+w2;if(b1<y2||y1>b2||r1<x2||x1>r2){return false;}else{return true;}};$scope.CheckFullCollision=function(objId1,objId2){var r1=document.getElementById(rectone);var r2=document.getElementById(recttwo);var r1bb=r1.getBoundingClientRect();var r2bb=r2.getBoundingClientRect();var r1x=r1bb.x;var r1w=r1bb.width;var r1y=r1bb.y;var r1h=r1bb.height;var r2x=r2bb.x;var r2w=r2bb.width;var r2y=r2bb.y;var r2h=r2bb.height;if(r1x+1>=r2x&&r1y+1>=r2y&&r1x+r1w-1<=r2x+r2w&&r1y+r1h-1<=r2y+r2h){return true;}else{return false;}};function fixUnit(s){var t=s.toString();var parts=t.match(/^([+-]?(?:\d+|\d*\.\d+))([a-z]*|%)$/);return(parts[2])?t:parts[1]+'px';}$scope.SetObjectBounds=function(objId,l,t,w,h){if($App.NAB[objId]){var e=$App.NAB[objId];}else{var e=document.getElementById(objId);}if(w){w=fixUnit(w);e.style.width=w;$scope.SetObjectStyle(objId,'width',w);};if(h){h=fixUnit(h);e.style.height=h;$scope.SetObjectStyle(objId,'height',h);};if(l){l=fixUnit(l);e.style.left=l;$scope.SetObjectStyle(objId,'left',l);};if(t){t=fixUnit(t);e.style.top=t;$scope.SetObjectStyle(objId,'top',t);};};$scope.MoveObject=function(objId,left,top){if($App.NAB[objId]){$App.NAB[objId].css("left",left);$App.NAB[objId].css("top",top);}else{$scope.SetObjectBounds(objId,left,top);}};$scope.ObjectToFront=function(objId){if($App.NAB[objId]){theParent=$App.NAB[objId].parent();$App.NAB[objId].detach().appendTo(theParent);}else{theParent=$("#"+objId).parent();$("#"+objId).detach().appendTo(theParent);}};$scope.ObjectToBack=function(objId){if($App.NAB[objId]){theParent=$App.NAB[objId].parent();$App.NAB[objId].detach().prependTo(theParent);}else if($("#"+objId).parent().prop("tagName")=="svg"){theParent=$("#"+objId).parent().children().first();$("#"+objId).detach().insertAfter(theParent);}else{theParent=$("#"+objId).parent();$("#"+objId).detach().prependTo(theParent);}};$scope.SizeObject=function(objId,width,height){if($App.NAB[objId]){w=fixUnit(width);h=fixUnit(height);$App.NAB[objId].css("width",w);$App.NAB[objId].css("height",h);}else{$scope.SetObjectBounds(objId,null,null,width,height);}};$scope.RotateObject=function(objId,deg){if($App.NAB[objId]){$App.NAB[objId].css("webkitTransform","rotate("+deg+"deg)");$App.NAB[objId].css("mozTransform","rotate("+deg+"deg)");$App.NAB[objId].css("msTransform","rotate("+deg+"deg)");$App.NAB[objId].css("oTransform","rotate("+deg+"deg)");$App.NAB[objId].css("transform","rotate("+deg+"deg)");}else{var e=document.getElementById(objId);e.style.webkitTransform='rotate('+deg+'deg)';e.style.mozTransform='rotate('+deg+'deg)';e.style.msTransform='rotate('+deg+'deg)';e.style.oTransform='rotate('+deg+'deg)';e.style.transform='rotate('+deg+'deg)';};};$scope.ListBoxSort=function(objId){if($("#"+objId).children("option:selected").text()==""){$("#"+objId).children("option:selected").remove();};$("#"+objId+" option").filter(function(){return!this.value||$.trim(this.value).length==0||$.trim(this.text).length==0;}).remove();var options=$("#"+objId+" option");var arr=options.map(function(_,o){return{t:$(o).text(),v:o.value};}).get();arr.sort(function(o1,o2){return o1.t>o2.t?1:o1.t<o2.t?-1:0;});options.each(function(i,o){o.value=arr[i].v;$(o).text(arr[i].t);});if($("#"+objId).children("option:selected").text()==""){$("#"+objId).children("option:selected").remove();};};$scope.ListBoxMoveItem=function(listID,direction){var listbox=document.getElementById(listID);var selIndex=listbox.selectedIndex;if(-1==selIndex){return;}var increment=-1;if(direction=='up'){if(selIndex==1){return;}else{increment=-1;}}else{increment=1;}if((selIndex+increment)<0||(selIndex+increment)>(listbox.options.length-1)){return;}var selValue=listbox.options[selIndex].value;var selText=listbox.options[selIndex].text;listbox.options[selIndex].value=listbox.options[selIndex+increment].value
 listbox.options[selIndex].text=listbox.options[selIndex+increment].text
 listbox.options[selIndex+increment].value=selValue;listbox.options[selIndex+increment].text=selText;listbox.selectedIndex=selIndex+increment;};$scope.OpenDialog=function(dlgId){var modalInstance=$modal.open({templateUrl:dlgId,controller:dlgId+'_Ctrl',scope:$scope,size:'sm',backdrop:'static',animation:true});};$scope.AlertBox=function(dlgTitle,dlgMsg,dlgKind,callbackFn){detect1=dlgMsg.toLowerCase().search("<script");detect2=dlgMsg.toLowerCase().search("javascript:");detect3=dlgMsg.toLowerCase().search("onclick");detect4=dlgMsg.toLowerCase().search("onmouse");if(detect1!=-1||detect2!=-1||detect3!=-1||detect4!=-1){return;}var dlgKind=dlgKind||"primary";var modalInstance=$modal.open({template:'<div class="modal-dialog" ng-class="modal-sm">'+'<div class="modal-content">'+'<div class="modal-header bg-'+dlgKind+'">'+'<h4 class="modal-title">'+dlgTitle+'</h4>'+'</div>'+'<div class="modal-body">'+'<p>'+dlgMsg+'</p>'+'</div>'+'<div class="modal-footer">'+'<button class="btn btn-primary" ng-click="CloseDialog();">OK</button>'+'</div>'+'</div>'+'</div>',controller:'App_DlgCtrl',scope:$scope,size:'sm',backdrop:'static'});if(callbackFn!=undefined){modalInstance.result.then(function(){callbackFn()},function(){callbackFn()});}};$scope.AlertBoxEx=function(dlgTitle,dlgMsg,dlgKind,theWidth,theHeight,theColor,callbackFn){detect1=dlgMsg.toLowerCase().search("<script");detect2=dlgMsg.toLowerCase().search("javascript:");detect3=dlgMsg.toLowerCase().search("onclick");detect4=dlgMsg.toLowerCase().search("onmouse");if(detect1!=-1||detect2!=-1||detect3!=-1||detect4!=-1){return;}var dlgKind=dlgKind||"primary";if(theWidth<150){theWidth=150;}if(theHeight<200){theHeight=200;}var modalBodyMaxHeight=theHeight-140;var modalInstance=$modal.open({template:'<div class="modal-dialog" style="width:'+theWidth+'px;height:'+theHeight+'px;" ng-class="modal-sm">'+'<div class="modal-content">'+'<div style="background:'+theColor+';" class="modal-header bg-'+dlgKind+'">'+'<h4 class="modal-title">'+dlgTitle+'</h4>'+'</div>'+'<div style="overflow:auto;max-height:'+modalBodyMaxHeight+'px" class="modal-body">'+'<p>'+dlgMsg+'</p>'+'</div>'+'<div class="modal-footer">'+'<button class="btn btn-custom" style="color:#fff;background:'+theColor+';" ng-click="CloseDialog();">OK</button>'+'</div>'+'</div>'+'</div>',controller:'App_DlgCtrl',scope:$scope,size:'sm',backdrop:'static'});if(callbackFn!=undefined){modalInstance.result.then(function(){callbackFn()},function(){callbackFn()});}};$scope.MessageBoxEx=function(dlgTitle,dlgMsg,dlgButtons,dlgKind,theWidth,theHeight,theColor,callbackFn){detect1=dlgMsg.toLowerCase().search("<script");detect2=dlgMsg.toLowerCase().search("javascript:");detect3=dlgMsg.toLowerCase().search("onclick");detect4=dlgMsg.toLowerCase().search("onmouse");if(detect1!=-1||detect2!=-1||detect3!=-1||detect4!=-1){return;}if(theWidth<150){theWidth=150;}if(theHeight<200){theHeight=200;}var modalBodyMaxHeight=theHeight-140;var idx;var btns=dlgButtons.split("|");var btnsHTML='';for(idx=0;idx<btns.length;idx++){btnsHTML+='<button class="btn btn-custom" style="color:#fff;background:'+theColor+';" ng-click="CloseDialogBtn('+idx.toString()+');">'+btns[idx]+'</button>';}var dlgKind=dlgKind||"primary";var modalInstance=$modal.open({template:'<div class="modal-dialog" style="width:'+theWidth+'px;height:'+theHeight+'px;" ng-class="modal-sm">'+'<div class="modal-content">'+'<div style="background:'+theColor+';" class="modal-header bg-'+dlgKind+'">'+'<h4 class="modal-title">'+dlgTitle+'</h4>'+'</div>'+'<div style="overflow:auto;max-height:'+modalBodyMaxHeight+'px" class="modal-body">'+'<p>'+dlgMsg+'</p>'+'</div>'+'<div class="modal-footer">'+btnsHTML+'</div>'+'</div>'+'</div>',controller:'App_DlgCtrl',scope:$scope,size:'sm',backdrop:'static'});if(callbackFn){modalInstance.result.then(function(value){callbackFn(value+1)},function(){callbackFn(0)});}};$scope.MessageBox=function(dlgTitle,dlgMsg,dlgButtons,dlgKind,callbackFn){detect1=dlgMsg.toLowerCase().search("<script");detect2=dlgMsg.toLowerCase().search("javascript:");detect3=dlgMsg.toLowerCase().search("onclick");detect4=dlgMsg.toLowerCase().search("onmouse");if(detect1!=-1||detect2!=-1||detect3!=-1||detect4!=-1){return;}var idx;var btns=dlgButtons.split("|");var btnsHTML='';for(idx=0;idx<btns.length;idx++){btnsHTML+='<button class="btn btn-primary" ng-click="CloseDialogBtn('+idx.toString()+');">'+btns[idx]+'</button>';}var dlgKind=dlgKind||"primary";var modalInstance=$modal.open({template:'<div class="modal-dialog" ng-class="modal-sm">'+'<div class="modal-content">'+'<div class="modal-header bg-'+dlgKind+'">'+'<h4 class="modal-title">'+dlgTitle+'</h4>'+'</div>'+'<div class="modal-body">'+'<p>'+dlgMsg+'</p>'+'</div>'+'<div class="modal-footer">'+btnsHTML+'</div>'+'</div>'+'</div>',controller:'App_DlgCtrl',scope:$scope,size:'sm',backdrop:'static'});if(callbackFn){modalInstance.result.then(function(value){callbackFn(value+1)},function(){callbackFn(0)});}};$scope.SerializeForm=function(formId){var form=document.getElementById(formId);if(!form||form.nodeName!=="FORM")return;var i,j,s,field,m,q=[];for(i=0;i<form.elements.length;i++){field=form.elements[i];if(field.name==="")continue;switch(field.nodeName){case'INPUT':switch(field.type){case'text':case'hidden':case'password':case'number':q.push(field.name+"="+encodeURIComponent(field.value));break;case'checkbox':if(angular.isElement(field)){m=angular.element(field).controller('ngModel');if(m){q.push(field.name+"="+encodeURIComponent(m.$modelValue));break;}}q.push(field.name+"="+encodeURIComponent(field.checked));break;case'radio':if(field.checked){q.push(field.name+"="+encodeURIComponent(field.value));}break;case'file':break;}break;case'TEXTAREA':q.push(field.name+"="+encodeURIComponent(field.value));break;case'SELECT':switch(field.type){case'select-one':q.push(field.name+"="+encodeURIComponent(field.value));break;case'select-multiple':s='';for(j=field.options.length-1;j>=0;j=j-1){if(field.options[j].selected){s+=','+encodeURIComponent(field.options[j].value);}}if(s.length>0)q.push(field.name+"="+s.substr(1));break;}break;}}return q.join("&");};$scope.SubmitForm=function(form,url,method,submitFn,successFn,failFn){var ok=true;if(submitFn){ok=submitFn();}if(ok&&form&&url&&method){var f=$scope.SerializeForm(form);$http({method:method,url:url,data:f,responseType:"text",headers:{'Content-Type':'application/x-www-form-urlencoded'}}).then(function(response){if(successFn)successFn(response.data,response.status);},function(response){if(failFn)failFn(response.data,response.status);});}};$scope.FormSubmit=function(formulario,url){var neoApp=angular.element(document.getElementById("ng-view")).scope();var fnsubmit=neoApp[formulario+"_submit"];var fnsuccess=neoApp[formulario+"_success"];var fnfail=neoApp[formulario+"_fail"];neoApp.SubmitForm(formulario,url,'POST',fnsubmit,fnsuccess,fnfail);};$scope.FormReset=function(formulario){$("#"+formulario).trigger("reset");};$scope.SetCompVar=function(varname,varvalue){varname2="";vararray=varname.split("[");for(n=0;n<vararray.length;n++){vararray[n]=vararray[n].replace("]","");if($App[vararray[n]]!=undefined){varname2=varname2+$App[vararray[n]];}else{varname2=varname2+vararray[n];};};$App[varname2]=varvalue;};$scope.GetCompVar=function(varname,composedvar){varname2="";vararray=composedvar.split("[");for(n=0;n<vararray.length;n++){vararray[n]=vararray[n].replace("]","");if($App[vararray[n]]!=undefined){varname2=varname2+$App[vararray[n]];}else{varname2=varname2+vararray[n];};};$App[varname]=$App[varname2];};$scope.ArraySuffle=function(array,newArray){for(n=0;n<array.length;n++){newArray[n]=array[n];}var currentIndex=newArray.length,temporaryValue,randomIndex;while(0!==currentIndex){randomIndex=Math.floor(Math.random()*currentIndex);currentIndex-=1;temporaryValue=newArray[currentIndex];newArray[currentIndex]=newArray[randomIndex];newArray[randomIndex]=temporaryValue;}};$scope.ArrayCopy=function(a,start,len){if(a&&start>-1&&len>0)return a.slice(start,start+len);return[]};$scope.LoadGoogleFont=function(fontName){$("head").append("<link href='https://fonts.googleapis.com/css?family="+fontName+"' rel='stylesheet' type='text/css'>");};$scope.LocalFileToVar=function(inputFileName,resultVar,tipo){$App.NAB.temp=resultVar;var realInputFileName=$("#"+inputFileName).prop("for");var files=$('#'+realInputFileName).prop("files");for(var i=0,f;f=files[i];i++){var reader=new FileReader();reader.onload=(function(theFile,resultVar,callBackFunction){return function(e,resultVar){varName=$App.NAB.temp;$App[varName]=e.target.result;};})(f);if(tipo=="text"){reader.readAsText(f);}else if(tipo=="binary"){reader.readAsBinaryString(f);}else if(tipo=="base64"){reader.readAsDataURL(f);}else{reader.readAsArrayBuffer(f);}};};$scope.SvgToBase64=function(theContainer,theWidth,theHeight,theType,theQuality,resultVar,callbackFn){var tagName=$("#"+theContainer).prop("tagName").toLowerCase();if(tagName=="svg"){var svg=document.getElementById(theContainer);}else{var svg=document.querySelector("#"+theContainer+" svg");}var svgToBase64PngTemp=svg.outerHTML;tempWidth=svg.getAttribute("width");if(tempWidth==null){tempWidth=theWidth;}tempHeight=svg.getAttribute("height");if(tempHeight==null){tempHeight=theHeight;}svg.setAttribute("width",theWidth);svg.setAttribute("height",theHeight);var svgData=new XMLSerializer().serializeToString(svg);var canvas=document.createElement("canvas");canvas.width=theWidth;canvas.height=theHeight;var ctx=canvas.getContext("2d");var img=document.createElement("img");img.setAttribute("src","data:image/svg+xml;base64,"+btoa(svgData));img.onload=function(){ctx.drawImage(img,0,0);svg.setAttribute("width",tempWidth);svg.setAttribute("height",tempHeight);if(theType=="jpg"){$App[resultVar]=canvas.toDataURL("image/jpeg",theQuality);if(callbackFn!=""&&callbackFn!=null&&callbackFn!=undefined){callbackFn();}}else{$App[resultVar]=canvas.toDataURL("image/png");if(callbackFn!=""&&callbackFn!=null&&callbackFn!=undefined){callbackFn();}}};};$scope.ImgToBase64=function(theImg,theType,theQuality,resultVar){var img=document.querySelector("#"+theImg);const canvas=document.createElement('canvas');const ctx=canvas.getContext('2d');canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;ctx.drawImage(img,0,0);if(theType=="jpg"){$App[resultVar]=canvas.toDataURL('image/jpeg',theQuality);}else{$App[resultVar]=canvas.toDataURL('image/png');}};$scope.Base64ToLocalFile=function(dataurl,filename){var arr=dataurl.split(','),mime=arr[0].match(/:(.*?);/)[1],bstr=atob(arr[1]),n=bstr.length,u8arr=new Uint8Array(n);while(n--){u8arr[n]=bstr.charCodeAt(n);}theFile=new File([u8arr],filename,{type:mime});saveAs(theFile,filename);};$scope.ResizeDesktopWindow=function(theWidth,theHeight){if(window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true){window.resizeTo(theWidth,theHeight);}};$scope.FitAppToScreen=function(coverScreen,verticalAlign,horizontalAlign){$scope.AppPosition(verticalAlign,horizontalAlign);var ha=horizontalAlign.toUpperCase();var va=verticalAlign.toUpperCase();if(va=="MIDDLE"){va="CENTER"};fit(document.getElementById("ng-app"),{x:0,y:0,width:window.innerWidth,height:window.innerHeight},{cover:coverScreen,hAlign:fit[ha],vAlign:fit[va]});fit(document.getElementById("ng-app"),{x:0,y:0,width:window.innerWidth,height:window.innerHeight},{cover:coverScreen,hAlign:fit[ha],vAlign:fit[va]},function(transform){$App.NAB.AppScale=transform.scale});};$scope.IsInstalled=function(){if(window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true){return true;}else{return false;}};$scope.CenterApp=function(){$("body").css("position","absolute");$("body").css("top","0px");$("body").css("bottom","0px");$("body").css("left","0px");$("body").css("right","0px");$("body").css("margin","auto");$("body").css("margin","auto");};$scope.TopCenterApp=function(){$("body").css("position","absolute");$("body").css("top","0px!important");$("body").css("left","0px");$("body").css("right","0px");$("body").css("bottom","auto");$("body").css("margin","auto");};$scope.ScaleApp=function(thezoom){$App.NAB.AppScale=thezoom;$("#ng-app").css("transform-origin","50% 50%");$("#ng-app").css("transform","scale("+thezoom+","+thezoom+")");};$scope.AppPosition=function(vertical,horizontal){$('body').css("position","absolute");if(vertical=="top"){$('body').css("top","0px");$('body').css("bottom","auto");}else if(vertical=="bottom"){$('body').css("bottom","0px");$('body').css("top","auto");}else{$('body').css("bottom","0px");$('body').css("top","0px");}if(horizontal=="left"){$('body').css("left","0px");$('body').css("right","auto");}else if(horizontal=="right"){$('body').css("left","auto");$('body').css("right","0px");}else{$('body').css("left","0px");$('body').css("right","0px");}$('body').css("margin","auto");};$scope.SetResponsivePages=function(plarge,pmedium,psmall,pxsmall){if(matchMedia){const largedisp=window.matchMedia("(min-width: 1025px)");const mediumdisp=window.matchMedia("(min-width: 768px) and (max-width: 1024px)");const smalldisp=window.matchMedia("(min-width: 481px) and (max-width: 767px)");const verysmalldisp=window.matchMedia("(min-width: 320px) and (max-width: 480px)");funciones=angular.element(document.getElementById("ng-view")).scope();$("body").css("width","100%");$("body").css("height","100%");$("body").css("overflow-x","hidden");$("body").css("overflow-y","auto");largedisp.addListener(WidthChangeLarge);WidthChangeLarge(largedisp);mediumdisp.addListener(WidthChangeMedium);WidthChangeMedium(mediumdisp);smalldisp.addListener(WidthChangeSmall);WidthChangeSmall(smalldisp);verysmalldisp.addListener(WidthChangeVerySmall);WidthChangeVerySmall(verysmalldisp);function WidthChangeLarge(largedisp){if(largedisp.matches){funciones.GotoPage(plarge);}};function WidthChangeMedium(mediumdisp){if(mediumdisp.matches){funciones.GotoPage(pmedium);}};function WidthChangeSmall(smalldisp){if(smalldisp.matches){funciones.GotoPage(psmall);}};function WidthChangeVerySmall(verysmalldisp){if(verysmalldisp.matches){funciones.GotoPage(pxsmall);}};}};$scope.AppBackgroundColor=function(thecolor){$("html").css("background",thecolor);};$scope.AppBackgroundImage=function(imagen){ruta=$("#"+imagen).attr('src');$("html").css('background-image','url('+ruta+' )');$("html").css('background-repeat','no-repeat');$("html").css('background-position','center center');$("html").css('background-attachment','fixed');$("html").css("-webkit-background-size","cover");$("html").css("-moz-background-size","cover");$("html").css("-o-background-size","cover");$("html").css("background-size","cover");};$scope.ObjDisableSelection=function(objectname){$("#"+objectname).css("-webkit-touch-callout","none");$("#"+objectname).css("-webkit-user-select","none");$("#"+objectname).css("-khtml-user-select","none");$("#"+objectname).css("-moz-user-select","none");$("#"+objectname).css("-ms-user-select","none");$("#"+objectname).css("user-select","none");};$scope.DisableSelection=function(){$("*").css("-webkit-touch-callout","none");$("*").css("-webkit-user-select","none");$("*").css("-khtml-user-select","none");$("*").css("-moz-user-select","none");$("*").css("-ms-user-select","none");$("*").css("user-select","none");};$scope.GetUrlParameter=function(param){url=window.location.href;var queryString=url?url.split('?')[1]:window.location.search.slice(1);var obj={};if(queryString){queryString=queryString.split('#')[0];var arr=queryString.split('&');for(var i=0;i<arr.length;i++){var a=arr[i].split('=');var paramName=a[0];var paramValue=typeof(a[1])==='undefined'?true:a[1];if(typeof paramValue==='string')paramValue=paramValue;if(paramName.match(/\[(\d+)?\]$/)){var key=paramName.replace(/\[(\d+)?\]/,'');if(!obj[key])obj[key]=[];if(paramName.match(/\[\d+\]$/)){var index=/\[(\d+)\]/.exec(paramName)[1];obj[key][index]=paramValue;}else{obj[key].push(paramValue);}}else{if(!obj[paramName]){obj[paramName]=paramValue;}else if(obj[paramName]&&typeof obj[paramName]==='string'){obj[paramName]=[obj[paramName]];obj[paramName].push(paramValue);}else{obj[paramName].push(paramValue);}}}}return obj[param];};$scope.csvToJSON=function(mycsv,separator,jsonObject){var lines=$App[mycsv].split("\n");var result=[];var headers=lines[0].split(separator);for(var i=1;i<lines.length;i++){var obj={};var currentline=lines[i].split(separator);for(var j=0;j<headers.length;j++){obj[headers[j]]=currentline[j];}result.push(obj);}$App[jsonObject]=result;};$scope.CheckInternetConnection=function(url,timeout,successFn,errorFn){$.ajax({url:url,timeout:timeout,cache:false,success:function(){if(successFn!=undefined){successFn();}},error:function(){if(errorFn!=undefined){errorFn();}},});};$scope.SetRelativePosition=function(objectname,vertical,horizontal){$("#"+objectname).css("position","absolute");if(vertical=="top"){$("#"+objectname).css("top","0px");$("#"+objectname).css("bottom","auto");}else if(vertical=="bottom"){$("#"+objectname).css("bottom","0px");$("#"+objectname).css("top","auto");}else{$("#"+objectname).css("bottom","0px");$("#"+objectname).css("top","0px");}if(horizontal=="left"){$("#"+objectname).css("left","0px");$("#"+objectname).css("right","auto");}else if(horizontal=="right"){$("#"+objectname).css("left","auto");$("#"+objectname).css("right","0px");}else{$("#"+objectname).css("left","0px");$("#"+objectname).css("right","0px");}$("#"+objectname).css("margin","auto");};$scope.WatchVar=function(varName,fn){if($App.NAB.$Watches[varName]){if($App.NAB.$Watches[varName].deRegFn)$App.NAB.$Watches[varName].deRegFn();delete $App.NAB.$Watches[varName];};if(fn){$App.NAB.$Watches[varName]={id:varName,deRegFn:undefined};$App.NAB.$Watches[varName].deRegFn=$scope.$watch(varName,function(newVal,oldVal){if(oldVal!==newVal)fn(newVal,oldVal);});};};$scope.TimerStart=function(objId,ms){if($App.NAB.$Timers[objId]){if(!angular.isDefined($App.NAB.$Timers[objId].promise)){$App.NAB.$Timers[objId].stime=Date.now();$App.NAB.$Timers[objId].promise=$interval($App.NAB.$Timers[objId].fn,ms||1000);}}else throw'A timer named "'+objId+'" does not exist.';};$scope.TimerStop=function(objId){if($App.NAB.$Timers[objId]){if(angular.isDefined($App.NAB.$Timers[objId].promise)){$interval.cancel($App.NAB.$Timers[objId].promise);$App.NAB.$Timers[objId].promise=undefined;}}else throw'A timer named "'+objId+'" does not exist.';};$scope._DeleteSound=function(sname){if($App.NAB.$Audio[sname]){$App.NAB.$Audio[sname].player.pause();delete $App.NAB.$Audio[sname].player;delete $App.NAB.$Audio[sname];return true;}return false;};$scope.PlaySound=function(fname,loop){var sname=ExtractFileName(fname).toLowerCase();if($App.NAB.$Audio[sname])throw'A sound named "'+sname+'" is already playing.';var devicePlatform=(typeof device!=='undefined'&&device.platform)?device.platform:null;if(typeof Audio!=="undefined"&&devicePlatform===null){obj={id:sname,kind:"audio",player:new Audio(fname)};obj.player.addEventListener("ended",function(){$scope._DeleteSound(sname);});}else if(devicePlatform){if(devicePlatform==='Android'){if(!IsUrl(fname))fname='/android_asset/www/'+fname;}obj={id:sname,kind:"media",player:new Media(fname,function onSuccess(){$scope._DeleteSound(sname);},function onError(e){console.log("Error playing sound: "+JSON.stringify(e));$scope._DeleteSound(sname);})};}else throw'Sound API unavailable.';$App.NAB.$Audio[sname]=obj;if(obj.kind==="audio"){obj.player.loop=loop;obj.player.play();}else obj.player.play({numberOfLoops:loop});};$scope.StopSound=function(fname){if(!fname||fname.length===0){for(var id in $App.NAB.$Audio)$scope._DeleteSound(id);}else{var sname=ExtractFileName(fname).toLowerCase();if(!$scope._DeleteSound(sname))throw'There is no playing sound named "'+sname+'"';}};$scope.CreateVideoPlayer=function(objId,fname,controls,autoplay,looping,muted){var sname=ExtractFileName(fname).toLowerCase();if(controls){addcontrols="controls";}else{addcontrols="";}if(autoplay){addautoplay="autoplay";}else{addautoplay="";}if(looping){addloop="loop";}else{addloop="";}if(muted){addmuted="muted";}else{addmuted="";}htmlstring='<video id="'+objId+'Video" width="100%" height="100%" '+addcontrols+' '+addautoplay+' '+addloop+' '+addmuted+'><source src="'+fname+'" type="video/mp4"></video>';$("#"+objId).html(htmlstring);};$scope.OnVideoEvent=function(objId,eventName,subroutine){if($App.NAB[objId+"Video"]){$App.NAB[objId+"Video"].on(eventName,subroutine);return;}$("#"+objId+"Video").on(eventName,subroutine);};$scope.CreateAudioPlayer=function(objId,fname,controls,autoplay,looping){var sname=ExtractFileName(fname).toLowerCase();if(controls){addcontrols="controls";}else{addcontrols="";}if(autoplay){addautoplay="autoplay";}else{addautoplay="";}if(looping){addloop="loop";}else{addloop="";}htmlstring='<audio id="'+objId+'Audio" width="100%" height="100%" '+addcontrols+' '+addautoplay+' '+addloop+'><source src="'+fname+'" type="audio/mp3"></audio>';$("#"+objId).html(htmlstring);};$scope.OnAudioEvent=function(objId,eventName,subroutine){if($App.NAB[objId+"Audio"]){$App.NAB[objId+"Audio"].on(eventName,subroutine);return;}$("#"+objId+"Audio").on(eventName,subroutine);};$scope.SoundBeep=function(){var snd=new Audio("data:audio/wav;base64,//uQRAAAAWMSLwUIYAAsYkXgoQwAEaYLWfkWgAI0wWs/ItAAAGDgYtAgAyN+QWaAAihwMWm4G8QQRDiMcCBcH3Cc+CDv/7xA4Tvh9Rz/y8QADBwMWgQAZG/ILNAARQ4GLTcDeIIIhxGOBAuD7hOfBB3/94gcJ3w+o5/5eIAIAAAVwWgQAVQ2ORaIQwEMAJiDg95G4nQL7mQVWI6GwRcfsZAcsKkJvxgxEjzFUgfHoSQ9Qq7KNwqHwuB13MA4a1q/DmBrHgPcmjiGoh//EwC5nGPEmS4RcfkVKOhJf+WOgoxJclFz3kgn//dBA+ya1GhurNn8zb//9NNutNuhz31f////9vt///z+IdAEAAAK4LQIAKobHItEIYCGAExBwe8jcToF9zIKrEdDYIuP2MgOWFSE34wYiR5iqQPj0JIeoVdlG4VD4XA67mAcNa1fhzA1jwHuTRxDUQ//iYBczjHiTJcIuPyKlHQkv/LHQUYkuSi57yQT//uggfZNajQ3Vmz+Zt//+mm3Wm3Q576v////+32///5/EOgAAADVghQAAAAA//uQZAUAB1WI0PZugAAAAAoQwAAAEk3nRd2qAAAAACiDgAAAAAAABCqEEQRLCgwpBGMlJkIz8jKhGvj4k6jzRnqasNKIeoh5gI7BJaC1A1AoNBjJgbyApVS4IDlZgDU5WUAxEKDNmmALHzZp0Fkz1FMTmGFl1FMEyodIavcCAUHDWrKAIA4aa2oCgILEBupZgHvAhEBcZ6joQBxS76AgccrFlczBvKLC0QI2cBoCFvfTDAo7eoOQInqDPBtvrDEZBNYN5xwNwxQRfw8ZQ5wQVLvO8OYU+mHvFLlDh05Mdg7BT6YrRPpCBznMB2r//xKJjyyOh+cImr2/4doscwD6neZjuZR4AgAABYAAAABy1xcdQtxYBYYZdifkUDgzzXaXn98Z0oi9ILU5mBjFANmRwlVJ3/6jYDAmxaiDG3/6xjQQCCKkRb/6kg/wW+kSJ5//rLobkLSiKmqP/0ikJuDaSaSf/6JiLYLEYnW/+kXg1WRVJL/9EmQ1YZIsv/6Qzwy5qk7/+tEU0nkls3/zIUMPKNX/6yZLf+kFgAfgGyLFAUwY//uQZAUABcd5UiNPVXAAAApAAAAAE0VZQKw9ISAAACgAAAAAVQIygIElVrFkBS+Jhi+EAuu+lKAkYUEIsmEAEoMeDmCETMvfSHTGkF5RWH7kz/ESHWPAq/kcCRhqBtMdokPdM7vil7RG98A2sc7zO6ZvTdM7pmOUAZTnJW+NXxqmd41dqJ6mLTXxrPpnV8avaIf5SvL7pndPvPpndJR9Kuu8fePvuiuhorgWjp7Mf/PRjxcFCPDkW31srioCExivv9lcwKEaHsf/7ow2Fl1T/9RkXgEhYElAoCLFtMArxwivDJJ+bR1HTKJdlEoTELCIqgEwVGSQ+hIm0NbK8WXcTEI0UPoa2NbG4y2K00JEWbZavJXkYaqo9CRHS55FcZTjKEk3NKoCYUnSQ0rWxrZbFKbKIhOKPZe1cJKzZSaQrIyULHDZmV5K4xySsDRKWOruanGtjLJXFEmwaIbDLX0hIPBUQPVFVkQkDoUNfSoDgQGKPekoxeGzA4DUvnn4bxzcZrtJyipKfPNy5w+9lnXwgqsiyHNeSVpemw4bWb9psYeq//uQZBoABQt4yMVxYAIAAAkQoAAAHvYpL5m6AAgAACXDAAAAD59jblTirQe9upFsmZbpMudy7Lz1X1DYsxOOSWpfPqNX2WqktK0DMvuGwlbNj44TleLPQ+Gsfb+GOWOKJoIrWb3cIMeeON6lz2umTqMXV8Mj30yWPpjoSa9ujK8SyeJP5y5mOW1D6hvLepeveEAEDo0mgCRClOEgANv3B9a6fikgUSu/DmAMATrGx7nng5p5iimPNZsfQLYB2sDLIkzRKZOHGAaUyDcpFBSLG9MCQALgAIgQs2YunOszLSAyQYPVC2YdGGeHD2dTdJk1pAHGAWDjnkcLKFymS3RQZTInzySoBwMG0QueC3gMsCEYxUqlrcxK6k1LQQcsmyYeQPdC2YfuGPASCBkcVMQQqpVJshui1tkXQJQV0OXGAZMXSOEEBRirXbVRQW7ugq7IM7rPWSZyDlM3IuNEkxzCOJ0ny2ThNkyRai1b6ev//3dzNGzNb//4uAvHT5sURcZCFcuKLhOFs8mLAAEAt4UWAAIABAAAAAB4qbHo0tIjVkUU//uQZAwABfSFz3ZqQAAAAAngwAAAE1HjMp2qAAAAACZDgAAAD5UkTE1UgZEUExqYynN1qZvqIOREEFmBcJQkwdxiFtw0qEOkGYfRDifBui9MQg4QAHAqWtAWHoCxu1Yf4VfWLPIM2mHDFsbQEVGwyqQoQcwnfHeIkNt9YnkiaS1oizycqJrx4KOQjahZxWbcZgztj2c49nKmkId44S71j0c8eV9yDK6uPRzx5X18eDvjvQ6yKo9ZSS6l//8elePK/Lf//IInrOF/FvDoADYAGBMGb7FtErm5MXMlmPAJQVgWta7Zx2go+8xJ0UiCb8LHHdftWyLJE0QIAIsI+UbXu67dZMjmgDGCGl1H+vpF4NSDckSIkk7Vd+sxEhBQMRU8j/12UIRhzSaUdQ+rQU5kGeFxm+hb1oh6pWWmv3uvmReDl0UnvtapVaIzo1jZbf/pD6ElLqSX+rUmOQNpJFa/r+sa4e/pBlAABoAAAAA3CUgShLdGIxsY7AUABPRrgCABdDuQ5GC7DqPQCgbbJUAoRSUj+NIEig0YfyWUho1VBBBA//uQZB4ABZx5zfMakeAAAAmwAAAAF5F3P0w9GtAAACfAAAAAwLhMDmAYWMgVEG1U0FIGCBgXBXAtfMH10000EEEEEECUBYln03TTTdNBDZopopYvrTTdNa325mImNg3TTPV9q3pmY0xoO6bv3r00y+IDGid/9aaaZTGMuj9mpu9Mpio1dXrr5HERTZSmqU36A3CumzN/9Robv/Xx4v9ijkSRSNLQhAWumap82WRSBUqXStV/YcS+XVLnSS+WLDroqArFkMEsAS+eWmrUzrO0oEmE40RlMZ5+ODIkAyKAGUwZ3mVKmcamcJnMW26MRPgUw6j+LkhyHGVGYjSUUKNpuJUQoOIAyDvEyG8S5yfK6dhZc0Tx1KI/gviKL6qvvFs1+bWtaz58uUNnryq6kt5RzOCkPWlVqVX2a/EEBUdU1KrXLf40GoiiFXK///qpoiDXrOgqDR38JB0bw7SoL+ZB9o1RCkQjQ2CBYZKd/+VJxZRRZlqSkKiws0WFxUyCwsKiMy7hUVFhIaCrNQsKkTIsLivwKKigsj8XYlwt/WKi2N4d//uQRCSAAjURNIHpMZBGYiaQPSYyAAABLAAAAAAAACWAAAAApUF/Mg+0aohSIRobBAsMlO//Kk4soosy1JSFRYWaLC4qZBYWFRGZdwqKiwkNBVmoWFSJkWFxX4FFRQWR+LsS4W/rFRb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VEFHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU291bmRib3kuZGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjAwNGh0dHA6Ly93d3cuc291bmRib3kuZGUAAAAAAAAAACU=");snd.play();};var fit=function(){"use strict";function t(t){return t.toUpperCase()}function e(t){return"number"==typeof t&&!isNaN(t)}function n(){return(new Date).getTime()}function i(t,e){for(var n=[],i=0,r=t.length;r>i;i++)n[i]=e(t[i]);return n}function r(t,e){for(var n in e)n in t||(t[n]=e[n]);return t}function o(e){if(!d)for(var n,i=H(C.body),r=w,o=0,a=T.length;a>o&&(d=T[o],n=d+r,!(n in i))&&(d=d.replace(/^(\w)/,t),n=d+r,!(n in i));o++);return d+e}function a(t){var e=H(t),n=e[o(w)].replace(/[a-z()]/gi,"").split(",");if(n.length<6)return[1,0,0,1,0,0];for(var i=0;6>i;i++)n[i]=parseFloat(n[i]);return n}function f(t,e){var n=a(e);n[0]=t.scale,n[3]=t.scale,n[4]+=t.tx,n[5]+=t.ty;var r=i(n,function(t){return t.toFixed(6)});e.style[o(m)]="0 0",e.style[o(w)]="matrix("+r.join(",")+")"}function s(t,e){var n=H(e),i=parseFloat(n.left)||0,r=parseFloat(n.top)||0;"static"===n.position&&(e.style.position="relative"),e.style.left=i+t.tx+b,e.style.top=r+t.ty+b,e.style.height=t.height+b,e.style.width=t.width+b}function l(t,e){var n=H(e),i=parseFloat(n.marginLeft)||0,r=parseFloat(n.marginTop)||0;e.style.marginLeft=i+t.tx+b,e.style.marginTop=r+t.ty+b,e.style.height=t.height+b,e.style.width=t.width+b}function h(t,e){e.height*=t.scale,e.width*=t.scale,e.x+=t.tx,e.y+=t.ty}function u(t){if(t.nodeType&&1==t.nodeType){var n=t.getBoundingClientRect();t={height:t.offsetHeight,width:t.offsetWidth,x:n.left,y:n.top}}return!e(t.x)&&e(t.left)&&(t.x=t.left),!e(t.y)&&e(t.top)&&(t.y=t.top),t}function c(){var t=n(),e=t-y;if(x>=e)clearInterval(v),v=setTimeout(c,x-e);else{for(var i=0,r=M.length;r>i;i++)M[i]();y=t}}function g(t,e,n,i,r){var o=u(t),a=u(e),s=0===o.width?R:o.width,l=0===o.height?P:o.height,c=0===a.width?I:a.width,g=0===a.height?P:a.height;R=s,B=l,I=c,P=g;var p=c/s,d=g/l,y=s/l,v=c/g,x=n.cover?d:p,m=n.cover?p:d,w=y>=v?x:m,T=s*w,O=l*w,F=n.hAlign==E?.5*(T-c):n.hAlign==L?T-c:0,b=n.vAlign==E?.5*(O-g):n.vAlign==A?O-g:0;return r=r||{},r.tx=a.x-F-o.x,r.ty=a.y-b-o.y,r.x=a.x-F-o.x*w,r.y=a.y-b-o.y*w,r.height=o.height*w,r.width=o.width*w,r.scale=w,i?i(r,t):n.apply&&(i="undefined"!=typeof HTMLElement&&t instanceof HTMLElement?f:h)(r,t),r}function p(t,e,n,i){if(!t||!e)throw"You must supply a target and a container";"function"==typeof n&&(i=n,n={}),n=r(n||{},N);var o=g(t,e,n,i);return n.watch&&(M.length||(z.addEventListener?(z.addEventListener("resize",c),z.addEventListener("orientationchange",c)):(z.attachEvent("onresize",c),z.attachEvent("onorientationchange",c))),o.trigger=function(){g(t,e,n,i,o)},o.on=function(t){var e=M.indexOf(o.trigger);~e||M.push(o.trigger),t||o.trigger()},o.off=function(){var t=M.indexOf(o.trigger);~t&&M.splice(t,1)},o.on(!0)),o}var d,y,v,x=50,m="TransformOrigin",w="Transform",T="moz ms o webkit".split(" "),E="center",A="bottom",L="right",O="left",F="top",b="px",z=window||self,C=document,H=z.getComputedStyle,M=[],N={hAlign:E,vAlign:E,watch:!1,cover:!1,apply:!0};Array.prototype.indexOf||(Array.prototype.indexOf=function(t){for(var e=0;e<this.length;++e)if(this[e]==t)return e;return-1});var R,B,I,P;return r(p,{watching:M,defaults:N,cssTransform:f,cssPosition:s,cssMargin:l,CENTER:E,BOTTOM:A,RIGHT:L,LEFT:O,TOP:F})}();"undefined"!=typeof exports&&("undefined"!=typeof module&&module.exports&&(exports=module.exports=fit),exports.fit=fit);(function(factory){if(typeof define==="function"&&define.amd){define(["jquery"],function($){return factory($)})}else if(typeof module==="object"&&typeof module.exports==="object"){exports=factory(require("jquery"))}else{factory(jQuery)}})(function($){$.easing.jswing=$.easing.swing;var pow=Math.pow,sqrt=Math.sqrt,sin=Math.sin,cos=Math.cos,PI=Math.PI,c1=1.70158,c2=c1*1.525,c3=c1+1,c4=2*PI/3,c5=2*PI/4.5;function bounceOut(x){var n1=7.5625,d1=2.75;if(x<1/d1){return n1*x*x}else if(x<2/d1){return n1*(x-=1.5/d1)*x+.75}else if(x<2.5/d1){return n1*(x-=2.25/d1)*x+.9375}else{return n1*(x-=2.625/d1)*x+.984375}}$.extend($.easing,{def:"easeOutQuad",swing:function(x){return $.easing[$.easing.def](x)},easeInQuad:function(x){return x*x},easeOutQuad:function(x){return 1-(1-x)*(1-x)},easeInOutQuad:function(x){return x<.5?2*x*x:1-pow(-2*x+2,2)/2},easeInCubic:function(x){return x*x*x},easeOutCubic:function(x){return 1-pow(1-x,3)},easeInOutCubic:function(x){return x<.5?4*x*x*x:1-pow(-2*x+2,3)/2},easeInQuart:function(x){return x*x*x*x},easeOutQuart:function(x){return 1-pow(1-x,4)},easeInOutQuart:function(x){return x<.5?8*x*x*x*x:1-pow(-2*x+2,4)/2},easeInQuint:function(x){return x*x*x*x*x},easeOutQuint:function(x){return 1-pow(1-x,5)},easeInOutQuint:function(x){return x<.5?16*x*x*x*x*x:1-pow(-2*x+2,5)/2},easeInSine:function(x){return 1-cos(x*PI/2)},easeOutSine:function(x){return sin(x*PI/2)},easeInOutSine:function(x){return-(cos(PI*x)-1)/2},easeInExpo:function(x){return x===0?0:pow(2,10*x-10)},easeOutExpo:function(x){return x===1?1:1-pow(2,-10*x)},easeInOutExpo:function(x){return x===0?0:x===1?1:x<.5?pow(2,20*x-10)/2:(2-pow(2,-20*x+10))/2},easeInCirc:function(x){return 1-sqrt(1-pow(x,2))},easeOutCirc:function(x){return sqrt(1-pow(x-1,2))},easeInOutCirc:function(x){return x<.5?(1-sqrt(1-pow(2*x,2)))/2:(sqrt(1-pow(-2*x+2,2))+1)/2},easeInElastic:function(x){return x===0?0:x===1?1:-pow(2,10*x-10)*sin((x*10-10.75)*c4)},easeOutElastic:function(x){return x===0?0:x===1?1:pow(2,-10*x)*sin((x*10-.75)*c4)+1},easeInOutElastic:function(x){return x===0?0:x===1?1:x<.5?-(pow(2,20*x-10)*sin((20*x-11.125)*c5))/2:pow(2,-20*x+10)*sin((20*x-11.125)*c5)/2+1},easeInBack:function(x){return c3*x*x*x-c1*x*x},easeOutBack:function(x){return 1+c3*pow(x-1,3)+c1*pow(x-1,2)},easeInOutBack:function(x){return x<.5?pow(2*x,2)*((c2+1)*2*x-c2)/2:(pow(2*x-2,2)*((c2+1)*(x*2-2)+c2)+2)/2},easeInBounce:function(x){return 1-bounceOut(1-x)},easeOutBounce:bounceOut,easeInOutBounce:function(x){return x<.5?(1-bounceOut(1-2*x))/2:(1+bounceOut(2*x-1))/2}})});function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.ownerDocument:(a=b,b=a.documentElement);if(null==c){if(!a.exitFullscreen&&!a.webkitExitFullscreen&&!a.webkitCancelFullScreen&&!a.msExitFullscreen&&!a.mozCancelFullScreen)return null;c=!!a.fullscreenElement||!!a.msFullscreenElement||!!a.webkitIsFullScreen||!!a.mozFullScreen;return!c?c:a.fullscreenElement||a.webkitFullscreenElement||a.webkitCurrentFullScreenElement||a.msFullscreenElement||a.mozFullScreenElement||c}c?(c=b.requestFullscreen||b.webkitRequestFullscreen||b.webkitRequestFullScreen||b.msRequestFullscreen||b.mozRequestFullScreen)&&c.call(b):(c=a.exitFullscreen||a.webkitExitFullscreen||a.webkitCancelFullScreen||a.msExitFullscreen||a.mozCancelFullScreen)&&c.call(a);return this}jQuery.fn.fullScreen=d;jQuery.fn.toggleFullScreen=function(){return d.call(this,!d.call(this))};var e,f,g;e=document;e.webkitCancelFullScreen?(f="webkitfullscreenchange",g="webkitfullscreenerror"):e.msExitFullscreen?(f="MSFullscreenChange",g="MSFullscreenError"):e.mozCancelFullScreen?(f="mozfullscreenchange",g="mozfullscreenerror"):(f="fullscreenchange",g="fullscreenerror");jQuery(document).bind(f,function(){jQuery(document).trigger(new jQuery.Event("fullscreenchange"))});jQuery(document).bind(g,function(){jQuery(document).trigger(new jQuery.Event("fullscreenerror"))});$scope.EnterFullScreen=function(){$(document).fullScreen(true);};$scope.ExitFullScreen=function(){$(document).fullScreen(false);};$scope.ObjectEnterFullScreen=function(ObjId){$("#"+ObjId).fullScreen(true);};$scope.ObjectExitFullScreen=function(ObjId){$("#"+ObjId).fullScreen(false);};var neoscript;$scope.AppOnKeyDown=function(callbackFn){$("body").keydown(function(evt){callbackFn(evt.which);});};(function(a,b){if("function"==typeof define&&define.amd)define([],b);else if("undefined"!=typeof exports)b();else{b(),a.FileSaver={exports:{}}.exports}})(this,function(){"use strict";function b(a,b){return"undefined"==typeof b?b={autoBom:!1}:"object"!=typeof b&&(console.warn("Depricated: Expected third argument to be a object"),b={autoBom:!b}),b.autoBom&&/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(a.type)?new Blob(["\uFEFF",a],{type:a.type}):a}function c(b,c,d){var e=new XMLHttpRequest;e.open("GET",b),e.responseType="blob",e.onload=function(){a(e.response,c,d)},e.onerror=function(){console.error("could not download file")},e.send()}function d(a){var b=new XMLHttpRequest;return b.open("HEAD",a,!1),b.send(),200<=b.status&&299>=b.status}function e(a){try{a.dispatchEvent(new MouseEvent("click"))}catch(c){var b=document.createEvent("MouseEvents");b.initMouseEvent("click",!0,!0,window,0,0,0,80,20,!1,!1,!1,!1,0,null),a.dispatchEvent(b)}}var f="object"==typeof window&&window.window===window?window:"object"==typeof self&&self.self===self?self:"object"==typeof global&&global.global===global?global:void 0,a=f.saveAs||"object"!=typeof window||window!==f?function(){}:"download"in HTMLAnchorElement.prototype?function(b,g,h){var i=f.URL||f.webkitURL,j=document.createElement("a");g=g||b.name||"download",j.download=g,j.rel="noopener","string"==typeof b?(j.href=b,j.origin===location.origin?e(j):d(j.href)?c(b,g,h):e(j,j.target="_blank")):(j.href=i.createObjectURL(b),setTimeout(function(){i.revokeObjectURL(j.href)},4E4),setTimeout(function(){e(j)},0))}:"msSaveOrOpenBlob"in navigator?function(f,g,h){if(g=g||f.name||"download","string"!=typeof f)navigator.msSaveOrOpenBlob(b(f,h),g);else if(d(f))c(f,g,h);else{var i=document.createElement("a");i.href=f,i.target="_blank",setTimeout(function(){e(i)})}}:function(a,b,d,e){if(e=e||open("","_blank"),e&&(e.document.title=e.document.body.innerText="downloading..."),"string"==typeof a)return c(a,b,d);var g="application/octet-stream"===a.type,h=/constructor/i.test(f.HTMLElement)||f.safari,i=/CriOS\/[\d]+/.test(navigator.userAgent);if((i||g&&h)&&"object"==typeof FileReader){var j=new FileReader;j.onloadend=function(){var a=j.result;a=i?a:a.replace(/^data:[^;]*;/,"data:attachment/file;"),e?e.location.href=a:location=a,e=null},j.readAsDataURL(a)}else{var k=f.URL||f.webkitURL,l=k.createObjectURL(a);e?e.location=l:location.href=l,e=null,setTimeout(function(){k.revokeObjectURL(l)},4E4)}};f.saveAs=a.saveAs=a,"undefined"!=typeof module&&(module.exports=a)});$scope.VarToFile=function(datavar,filename){var blob=new Blob([datavar],{type:"text/plain;charset=utf-8"});saveAs(blob,filename);};!function(a){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=a();else if("function"==typeof define&&define.amd)define([],a);else{var b;b="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this,b.mexp=a()}}(function(){return function a(b,c,d){function e(g,h){if(!c[g]){if(!b[g]){var i="function"==typeof require&&require;if(!h&&i)return i(g,!0);if(f)return f(g,!0);var j=new Error("Cannot find module '"+g+"'");throw j.code="MODULE_NOT_FOUND",j}var k=c[g]={exports:{}};b[g][0].call(k.exports,function(a){var c=b[g][1][a];return e(c?c:a)},k,k.exports,a,b,c,d)}return c[g].exports}for(var f="function"==typeof require&&require,g=0;g<d.length;g++)e(d[g]);return e}({1:[function(a,b,c){var d=a("./postfix_evaluator.js");d.prototype.formulaEval=function(){"use strict";for(var a,b,c,d=[],e=this.value,f=0;f<e.length;f++)1===e[f].type||3===e[f].type?d.push({value:3===e[f].type?e[f].show:e[f].value,type:1}):13===e[f].type?d.push({value:e[f].show,type:1}):0===e[f].type?d[d.length-1]={value:e[f].show+("-"!=e[f].show?"(":"")+d[d.length-1].value+("-"!=e[f].show?")":""),type:0}:7===e[f].type?d[d.length-1]={value:(1!=d[d.length-1].type?"(":"")+d[d.length-1].value+(1!=d[d.length-1].type?")":"")+e[f].show,type:7}:10===e[f].type?(a=d.pop(),b=d.pop(),"P"===e[f].show||"C"===e[f].show?d.push({value:"<sup>"+b.value+"</sup>"+e[f].show+"<sub>"+a.value+"</sub>",type:10}):d.push({value:(1!=b.type?"(":"")+b.value+(1!=b.type?")":"")+"<sup>"+a.value+"</sup>",type:1})):2===e[f].type||9===e[f].type?(a=d.pop(),b=d.pop(),d.push({value:(1!=b.type?"(":"")+b.value+(1!=b.type?")":"")+e[f].show+(1!=a.type?"(":"")+a.value+(1!=a.type?")":""),type:e[f].type})):12===e[f].type&&(a=d.pop(),b=d.pop(),c=d.pop(),d.push({value:e[f].show+"("+c.value+","+b.value+","+a.value+")",type:12}));return d[0].value},b.exports=d},{"./postfix_evaluator.js":5}],2:[function(a,b,c){function d(a,b){for(var c=0;c<a.length;c++)a[c]+=b;return a}function e(a,b,c,d){for(var e=0;e<d;e++)if(a[c+e]!==b[e])return!1;return!0}var f=a("./math_function.js"),g=["sin","cos","tan","pi","(",")","P","C","asin","acos","atan","7","8","9","int","cosh","acosh","ln","^","root","4","5","6","/","!","tanh","atanh","Mod","1","2","3","*","sinh","asinh","e","log","0",".","+","-",",","Sigma","n","Pi","pow"],h=["sin","cos","tan","&pi;","(",")","P","C","asin","acos","atan","7","8","9","Int","cosh","acosh"," ln","^","root","4","5","6","&divide;","!","tanh","atanh"," Mod ","1","2","3","&times;","sinh","asinh","e"," log","0",".","+","-",",","&Sigma;","n","&Pi;","pow"],i=[f.math.sin,f.math.cos,f.math.tan,"PI","(",")",f.math.P,f.math.C,f.math.asin,f.math.acos,f.math.atan,"7","8","9",Math.floor,f.math.cosh,f.math.acosh,Math.log,Math.pow,Math.sqrt,"4","5","6",f.math.div,f.math.fact,f.math.tanh,f.math.atanh,f.math.mod,"1","2","3",f.math.mul,f.math.sinh,f.math.asinh,"E",f.math.log,"0",".",f.math.add,f.math.sub,",",f.math.sigma,"n",f.math.Pi,Math.pow],j={0:11,1:0,2:3,3:0,4:0,5:0,6:0,7:11,8:11,9:1,10:10,11:0,12:11,13:0},k=[0,0,0,3,4,5,10,10,0,0,0,1,1,1,0,0,0,0,10,0,1,1,1,2,7,0,0,2,1,1,1,2,0,0,3,0,1,6,9,9,11,12,13,12,8],l={0:!0,1:!0,3:!0,4:!0,6:!0,8:!0,9:!0,12:!0,13:!0},m={0:!0,1:!0,2:!0,3:!0,4:!0,5:!0,6:!0,7:!0,8:!0,9:!0,10:!0,11:!0,12:!0,13:!0},n={0:!0,3:!0,4:!0,8:!0,12:!0,13:!0},o={},p={0:!0,1:!0,3:!0,4:!0,6:!0,8:!0,12:!0,13:!0},q={1:!0},r=[[],["1","2","3","7","8","9","4","5","6","+","-","*","/","(",")","^","!","P","C","e","0",".",",","n"],["pi","ln","Pi"],["sin","cos","tan","Del","int","Mod","log","pow"],["asin","acos","atan","cosh","root","tanh","sinh"],["acosh","atanh","asinh","Sigma"]];f.addToken=function(a){for(var b=0;b<a.length;b++){var c=a[b].token.length,d=-1;if(c<r.length)for(var e=0;e<r[c].length;e++)if(a[b].token===r[c][e]){d=g.indexOf(r[c][e]);break}d===-1?(g.push(a[b].token),k.push(a[b].type),r.length<=a[b].token.length&&(r[a[b].token.length]=[]),r[a[b].token.length].push(a[b].token),i.push(a[b].value),h.push(a[b].show)):(g[d]=a[b].token,k[d]=a[b].type,i[d]=a[b].value,h[d]=a[b].show)}},f.lex=function(a,b){"use strict";var c,s,t,u,v={value:f.math.changeSign,type:0,pre:21,show:"-"},w={value:")",show:")",type:5,pre:0},x={value:"(",type:4,pre:0,show:"("},y=[x],z=[],A=a,B=0,C=l,D=0,E=o,F="";"undefined"!=typeof b&&f.addToken(b);var G={};for(s=0;s<A.length;s++)if(" "!==A[s]){for(c="",t=A.length-s>r.length-2?r.length-1:A.length-s;t>0;t--)for(u=0;u<r[t].length;u++)e(A,r[t][u],s,t)&&(c=r[t][u],u=r[t].length,t=0);if(s+=c.length-1,""===c)throw new f.Exception("Can't understand after "+A.slice(s));var H,I=g.indexOf(c),J=c,K=k[I],L=i[I],M=j[K],N=h[I],O=y[y.length-1];for(H=z.length;H--&&0===z[H];)if([0,2,3,5,9,11,12,13].indexOf(K)!==-1){if(C[K]!==!0)throw new f.Exception(c+" is not allowed after "+F);y.push(w),C=m,E=p,d(z,-1).pop()}if(C[K]!==!0)throw new f.Exception(c+" is not allowed after "+F);if(E[K]===!0&&(K=2,L=f.math.mul,N="&times;",M=3,s-=c.length),G={value:L,type:K,pre:M,show:N},0===K)C=l,E=o,d(z,2).push(2),y.push(G),y.push(x);else if(1===K)1===O.type?(O.value+=L,d(z,1)):y.push(G),C=m,E=n;else if(2===K)C=l,E=o,d(z,2),y.push(G);else if(3===K)y.push(G),C=m,E=p;else if(4===K)B+=z.length,z=[],D++,C=l,E=o,y.push(G);else if(5===K){if(!D)throw new f.Exception("Closing parenthesis are more than opening one, wait What!!!");for(;B--;)y.push(w);B=0,D--,C=m,E=p,y.push(G)}else if(6===K){if(O.hasDec)throw new f.Exception("Two decimals are not allowed in one number");1!==O.type&&(O={value:0,type:1,pre:0},y.push(O),d(z,-1)),C=q,d(z,1),E=o,O.value+=L,O.hasDec=!0}else 7===K&&(C=m,E=p,d(z,1),y.push(G));8===K?(C=l,E=o,d(z,4).push(4),y.push(G),y.push(x)):9===K?(9===O.type?O.value===f.math.add?(O.value=L,O.show=N,d(z,1)):O.value===f.math.sub&&"-"===N&&(O.value=f.math.add,O.show="+",d(z,1)):5!==O.type&&7!==O.type&&1!==O.type&&3!==O.type&&13!==O.type?"-"===J&&(C=l,E=o,d(z,2).push(2),y.push(v),y.push(x)):(y.push(G),d(z,2)),C=l,E=o):10===K?(C=l,E=o,d(z,2),y.push(G)):11===K?(C=l,E=o,y.push(G)):12===K?(C=l,E=o,d(z,6).push(6),y.push(G),y.push(x)):13===K&&(C=m,E=p,y.push(G)),d(z,-1),F=c}for(H=z.length;H--&&0===z[H];)y.push(w),d(z,-1).pop();if(C[5]!==!0)throw new f.Exception("complete the expression");for(;D--;)y.push(w);return y.push(w),new f(y)},b.exports=f},{"./math_function.js":3}],3:[function(a,b,c){var d=function(a){this.value=a};d.math={isDegree:!0,acos:function(a){return d.math.isDegree?180/Math.PI*Math.acos(a):Math.acos(a)},add:function(a,b){return a+b},asin:function(a){return d.math.isDegree?180/Math.PI*Math.asin(a):Math.asin(a)},atan:function(a){return d.math.isDegree?180/Math.PI*Math.atan(a):Math.atan(a)},acosh:function(a){return Math.log(a+Math.sqrt(a*a-1))},asinh:function(a){return Math.log(a+Math.sqrt(a*a+1))},atanh:function(a){return Math.log((1+a)/(1-a))},C:function(a,b){var c=1,e=a-b,f=b;f<e&&(f=e,e=b);for(var g=f+1;g<=a;g++)c*=g;return c/d.math.fact(e)},changeSign:function(a){return-a},cos:function(a){return d.math.isDegree&&(a=d.math.toRadian(a)),Math.cos(a)},cosh:function(a){return(Math.pow(Math.E,a)+Math.pow(Math.E,-1*a))/2},div:function(a,b){return a/b},fact:function(a){if(a%1!==0)return"NaN";for(var b=1,c=2;c<=a;c++)b*=c;return b},inverse:function(a){return 1/a},log:function(a){return Math.log(a)/Math.log(10)},mod:function(a,b){return a%b},mul:function(a,b){return a*b},P:function(a,b){for(var c=1,d=Math.floor(a)-Math.floor(b)+1;d<=Math.floor(a);d++)c*=d;return c},Pi:function(a,b,c){for(var d=1,e=a;e<=b;e++)d*=Number(c.postfixEval({n:e}));return d},pow10x:function(a){for(var b=1;a--;)b*=10;return b},sigma:function(a,b,c){for(var d=0,e=a;e<=b;e++)d+=Number(c.postfixEval({n:e}));return d},sin:function(a){return d.math.isDegree&&(a=d.math.toRadian(a)),Math.sin(a)},sinh:function(a){return(Math.pow(Math.E,a)-Math.pow(Math.E,-1*a))/2},sub:function(a,b){return a-b},tan:function(a){return d.math.isDegree&&(a=d.math.toRadian(a)),Math.tan(a)},tanh:function(a){return d.sinha(a)/d.cosha(a)},toRadian:function(a){return a*Math.PI/180}},d.Exception=function(a){this.message=a},b.exports=d},{}],4:[function(a,b,c){var d=a("./lexer.js");d.prototype.toPostfix=function(){"use strict";for(var a,b,c,e,f,g=[],h=[{value:"(",type:4,pre:0}],i=this.value,j=1;j<i.length;j++)if(1===i[j].type||3===i[j].type||13===i[j].type)1===i[j].type&&(i[j].value=Number(i[j].value)),g.push(i[j]);else if(4===i[j].type)h.push(i[j]);else if(5===i[j].type)for(;4!==(b=h.pop()).type;)g.push(b);else if(11===i[j].type){for(;4!==(b=h.pop()).type;)g.push(b);h.push(b)}else{a=i[j],e=a.pre,f=h[h.length-1],c=f.pre;var k="Math.pow"==f.value&&"Math.pow"==a.value;if(e>c)h.push(a);else{for(;c>=e&&!k||k&&e<c;)b=h.pop(),f=h[h.length-1],g.push(b),c=f.pre,k="Math.pow"==a.value&&"Math.pow"==f.value;h.push(a)}}return new d(g)},b.exports=d},{"./lexer.js":2}],5:[function(a,b,c){var d=a("./postfix.js");d.prototype.postfixEval=function(a){"use strict";a=a||{},a.PI=Math.PI,a.E=Math.E;for(var b,c,e,f=[],g=this.value,h="undefined"!=typeof a.n,i=0;i<g.length;i++)1===g[i].type?f.push({value:g[i].value,type:1}):3===g[i].type?f.push({value:a[g[i].value],type:1}):0===g[i].type?"undefined"==typeof f[f.length-1].type?f[f.length-1].value.push(g[i]):f[f.length-1].value=g[i].value(f[f.length-1].value):7===g[i].type?"undefined"==typeof f[f.length-1].type?f[f.length-1].value.push(g[i]):f[f.length-1].value=g[i].value(f[f.length-1].value):8===g[i].type?(b=f.pop(),c=f.pop(),f.push({type:1,value:g[i].value(c.value,b.value)})):10===g[i].type?(b=f.pop(),c=f.pop(),"undefined"==typeof c.type?(c.value=c.concat(b),c.value.push(g[i]),f.push(c)):"undefined"==typeof b.type?(b.unshift(c),b.push(g[i]),f.push(b)):f.push({type:1,value:g[i].value(c.value,b.value)})):2===g[i].type||9===g[i].type?(b=f.pop(),c=f.pop(),"undefined"==typeof c.type?(console.log(c),c=c.concat(b),c.push(g[i]),f.push(c)):"undefined"==typeof b.type?(b.unshift(c),b.push(g[i]),f.push(b)):f.push({type:1,value:g[i].value(c.value,b.value)})):12===g[i].type?(b=f.pop(),"undefined"!=typeof b.type&&(b=[b]),c=f.pop(),e=f.pop(),f.push({type:1,value:g[i].value(e.value,c.value,new d(b))})):13===g[i].type&&(h?f.push({value:a[g[i].value],type:3}):f.push([g[i]]));if(f.length>1)throw new d.exception("Uncaught Syntax error");return f[0].value>1e15?"Infinity":parseFloat(f[0].value.toFixed(15))},d.eval=function(a,b,c){return"undefined"==typeof b?this.lex(a).toPostfix().postfixEval():"undefined"==typeof c?"undefined"!=typeof b.length?this.lex(a,b).toPostfix().postfixEval():this.lex(a).toPostfix().postfixEval(b):this.lex(a,b).toPostfix().postfixEval(c)},b.exports=d},{"./postfix.js":4}]},{},[1])(1)});$scope.Calculate=function(formula,decimals){var numero=mexp.eval(formula);if(decimals!=-1){potencia=Math.pow(10,decimals);numero=Math.round(numero*potencia)/potencia;}return numero;};$(document).mousemove(function(evt){if($App.NAB.AppScale==0){$App.NAB.AppScale=1;}var x=((evt.pageX-$('body').offset().left)+$(window).scrollLeft())/$App.NAB.AppScale;var y=((evt.pageY-$('body').offset().top)+$(window).scrollTop())/$App.NAB.AppScale;var sx=((evt.pageX+$(window).scrollLeft())/$App.NAB.AppScale);var sy=((evt.pageY+$(window).scrollTop())/$App.NAB.AppScale);$App.NAB.MouseX=Math.round(x);$App.NAB.MouseY=Math.round(y);$App.NAB.MouseScreenX=Math.round(sx);$App.NAB.MouseScreenY=Math.round(sy);});$(document).on("touchmove",function(evt){if($App.NAB.AppScale==0){$App.NAB.AppScale=1;}var x=((evt.touches[0].clientX-$('body').offset().left)+$(window).scrollLeft())/$App.NAB.AppScale;var y=((evt.touches[0].clientY-$('body').offset().top)+$(window).scrollTop())/$App.NAB.AppScale;$App.NAB.TouchX=Math.round(x);$App.NAB.TouchY=Math.round(y);});$(document).on("touchstart",function(evt){if($App.NAB.AppScale==0){$App.NAB.AppScale=1;}var x=((evt.touches[0].clientX-$('body').offset().left)+$(window).scrollLeft())/$App.NAB.AppScale;var y=((evt.touches[0].clientY-$('body').offset().top)+$(window).scrollTop())/$App.NAB.AppScale;$App.NAB.TouchX=Math.round(x);$App.NAB.TouchY=Math.round(y);});
-$App.NAB={PageList:["landinghome","Evening","v4rules","morning","Records-2026","where1","where2","where3","where4","where5","where6","where7","where8","where9","where10","where11","where12","where13","where14","where15","where16","where17","where18","where19","where20","where21","where22","where23","where24","where25","where26","where27","where28","where29","where30","where31","where32","where33","where34","where35","where36","where37","where38","where39","where40","where41","where42","where43","where44","where45","where46","where47","where48","V4DiaryVersionRecord","VERSION","PrayerReps","DailyReps1","Prayer1","Allvariables"],PageEnterEffect:["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],PageCount:59,PageExitEffect:["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],PageNumber:1,AppScale:1,PageID:"",Hour:"",Hour24:"",Minute:"",Second:"",Time:"",Time24:"",DateShort:"",DateLong:"",DateFull:"",Month:"",MonthNum:"",WeekNum:"",Day:"",DayNum:"",Year:"",ClientWidth:$window.innerWidth,ClientHeight:$window.innerHeight,WindowWidth:$window.outerWidth,WindowHeight:$window.outerHeight,Orientation:$scope.GetOrientation(),OperatingSystem:"",$Watches:{},$Timers:{},$Audio:{}};$scope.__doUpdate=function(){var Now=new Date();$App.NAB.Hour=$filter("date")(Now,"h");$App.NAB.Hour24=$filter("date")(Now,"H");$App.NAB.Minute=$filter("date")(Now,"mm");$App.NAB.Second=$filter("date")(Now,"ss");$App.NAB.Time=$filter("date")(Now,"mediumTime");$App.NAB.Time24=$filter("date")(Now,"H:mm:ss");$App.NAB.DateShort=$filter("date")(Now,"shortDate");$App.NAB.DateLong=$filter("date")(Now,"longDate");$App.NAB.DateFull=$filter("date")(Now,"fullDate");$App.NAB.Month=$filter("date")(Now,"MMMM");$App.NAB.MonthNum=$filter("date")(Now,"M");$App.NAB.WeekNum=$filter("date")(Now,"w");$App.NAB.Day=$filter("date")(Now,"EEEE");$App.NAB.DayNum=$filter("date")(Now,"d");$App.NAB.Year=$filter("date")(Now,"yyyy");};$scope.__doOrientationChange=function(){$App.NAB.Orientation=$scope.GetOrientation();};$scope.__doResize=function(){$App.NAB.ClientWidth=$window.innerWidth;$App.NAB.ClientHeight=$window.innerHeight;$App.NAB.WindowWidth=$window.outerWidth;$App.NAB.WindowHeight=$window.outerHeight;};$scope.__init=function(){angular.element($window).bind("orientationchange.app",function(){$timeout($scope.__doOrientationChange);});angular.element($window).bind("resize.app",function(){$timeout($scope.__doResize);});$interval($scope.__doUpdate,1000);$App.NAB.OperatingSystem=GetPlatform();$scope.__doUpdate();};
+$App.NAB={PageList:["landinghome","wheretemplate1","Evening","v4rules","morning","Records-2026","where1","where2","where3","where4","where5","where6","where7","where8","where9","where10","where11","where12","where13","where14","where15","where16","where17","where18","where19","where20","where21","where22","where23","where24","where25","where26","where27","where28","where29","where30","where31","where32","where33","where34","where35","where36","where37","where38","where39","where40","where41","where42","where43","where44","where45","where46","where47","where48","V4DiaryVersionRecord","VERSION","PrayerReps","DailyReps1","Prayer1","Allvariables"],PageEnterEffect:["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],PageCount:60,PageExitEffect:["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],PageNumber:1,AppScale:1,PageID:"",Hour:"",Hour24:"",Minute:"",Second:"",Time:"",Time24:"",DateShort:"",DateLong:"",DateFull:"",Month:"",MonthNum:"",WeekNum:"",Day:"",DayNum:"",Year:"",ClientWidth:$window.innerWidth,ClientHeight:$window.innerHeight,WindowWidth:$window.outerWidth,WindowHeight:$window.outerHeight,Orientation:$scope.GetOrientation(),OperatingSystem:"",$Watches:{},$Timers:{},$Audio:{}};$scope.__doUpdate=function(){var Now=new Date();$App.NAB.Hour=$filter("date")(Now,"h");$App.NAB.Hour24=$filter("date")(Now,"H");$App.NAB.Minute=$filter("date")(Now,"mm");$App.NAB.Second=$filter("date")(Now,"ss");$App.NAB.Time=$filter("date")(Now,"mediumTime");$App.NAB.Time24=$filter("date")(Now,"H:mm:ss");$App.NAB.DateShort=$filter("date")(Now,"shortDate");$App.NAB.DateLong=$filter("date")(Now,"longDate");$App.NAB.DateFull=$filter("date")(Now,"fullDate");$App.NAB.Month=$filter("date")(Now,"MMMM");$App.NAB.MonthNum=$filter("date")(Now,"M");$App.NAB.WeekNum=$filter("date")(Now,"w");$App.NAB.Day=$filter("date")(Now,"EEEE");$App.NAB.DayNum=$filter("date")(Now,"d");$App.NAB.Year=$filter("date")(Now,"yyyy");};$scope.__doOrientationChange=function(){$App.NAB.Orientation=$scope.GetOrientation();};$scope.__doResize=function(){$App.NAB.ClientWidth=$window.innerWidth;$App.NAB.ClientHeight=$window.innerHeight;$App.NAB.WindowWidth=$window.outerWidth;$App.NAB.WindowHeight=$window.outerHeight;};$scope.__init=function(){angular.element($window).bind("orientationchange.app",function(){$timeout($scope.__doOrientationChange);});angular.element($window).bind("resize.app",function(){$timeout($scope.__doResize);});$interval($scope.__doUpdate,1000);$App.NAB.OperatingSystem=GetPlatform();$scope.__doUpdate();};
 $scope.landinghome_pageenter = function() {$App.VERSION = "V4.098 29/7/26";
 $App.read1 = 1.1;
 $App.read2 = 1.1;
@@ -398,18 +398,114 @@ $scope.SVGicon61_click = function() {neoTalkSpeak($App.where1a, "", 1.1, 1.1);};
 $scope.SVGicon62_click = function() {neoTalkSpeak($App.where2a, "", 1.1, 1.1);};
 $scope.SVGicon103_click = function() {neoTalkSpeak($App.where4a, "", 1.1, 1.1);};
 $scope.SVGicon104_click = function() {neoTalkSpeak($App.where3a, "", 1.1, 1.1);};
-$scope.Headline75_click = function() {$scope.GotoPage( "where1" );};
-$scope.Headline77_click = function() {$scope.GotoPage( "where2" );};
-$scope.Headline78_click = function() {$scope.GotoPage( "where3" );};
-$scope.Headline86_click = function() {$scope.GotoPage( "where4" );};
+$scope.Headline75_click = function() {$App.T000 = "T001";
+$App.Twherea = localStorage.getItem("where1a");
+$App.Twhere = localStorage.getItem("where1");
+$App.Tfreezecontent = localStorage.getItem("freezecontent1");
+$App.Tulr = localStorage.getItem("ulr1");
+$App.Tulra = localStorage.getItem("ulr1a");
+$App.Tulrb = localStorage.getItem("ulr1b");
+$App.Tulrc = localStorage.getItem("ulr1c");
+$App.Tulrd = localStorage.getItem("ulr1d");
+$App.Tulre = localStorage.getItem("ulr1e");
+$App.Tulrf = localStorage.getItem("ulr1f");
+$App.Twhere = localStorage.getItem("where1");
+$scope.GotoPage( "wheretemplate1" );};
+$scope.Headline77_click = function() {$App.T000 = "T002";
+$App.Twherea = localStorage.getItem("where2a");
+$App.Twhere = localStorage.getItem("where2");
+$App.Tfreezecontent = localStorage.getItem("freezecontent2");
+$App.Tulr = localStorage.getItem("ulr2");
+$App.Tulra = localStorage.getItem("ulr2a");
+$App.Tulrb = localStorage.getItem("ulr2b");
+$App.Tulrc = localStorage.getItem("ulr2c");
+$App.Tulrd = localStorage.getItem("ulr2d");
+$App.Tulre = localStorage.getItem("ulr2e");
+$App.Tulrf = localStorage.getItem("ulr2f");
+$App.Twhere = localStorage.getItem("where2");
+$scope.GotoPage( "wheretemplate1" );};
+$scope.Headline78_click = function() {$App.T000 = "T003";
+$App.Twherea = localStorage.getItem("where3a");
+$App.Twhere = localStorage.getItem("where3");
+$App.Tfreezecontent = localStorage.getItem("freezecontent3");
+$App.Tulr = localStorage.getItem("ulr3");
+$App.Tulra = localStorage.getItem("ulr3a");
+$App.Tulrb = localStorage.getItem("ulr3b");
+$App.Tulrc = localStorage.getItem("ulr3c");
+$App.Tulrd = localStorage.getItem("ulr3d");
+$App.Tulre = localStorage.getItem("ulr3e");
+$App.Tulrf = localStorage.getItem("ulr3f");
+$App.Twhere = localStorage.getItem("where3");
+$scope.GotoPage( "wheretemplate1" );};
+$scope.Headline86_click = function() {$App.T000 = "T004";
+$App.Twherea = localStorage.getItem("where4a");
+$App.Twhere = localStorage.getItem("where4");
+$App.Tfreezecontent = localStorage.getItem("freezecontent4");
+$App.Tulr = localStorage.getItem("ulr4");
+$App.Tulra = localStorage.getItem("ulr4a");
+$App.Tulrb = localStorage.getItem("ulr4b");
+$App.Tulrc = localStorage.getItem("ulr4c");
+$App.Tulrd = localStorage.getItem("ulr4d");
+$App.Tulre = localStorage.getItem("ulr4e");
+$App.Tulrf = localStorage.getItem("ulr4f");
+$App.Twhere = localStorage.getItem("where4");
+$scope.GotoPage( "wheretemplate1" );};
 $scope.SVGicon114_click = function() {neoTalkSpeak($App.where5a, "", 1.1, 1.1);};
 $scope.SVGicon115_click = function() {neoTalkSpeak($App.where6a, "", 1.1, 1.1);};
 $scope.SVGicon116_click = function() {neoTalkSpeak($App.where8a, "", 1.1, 1.1);};
 $scope.SVGicon117_click = function() {neoTalkSpeak($App.where7a, "", 1.1, 1.1);};
-$scope.Headline89_click = function() {$scope.GotoPage( "where5" );};
-$scope.Headline90_click = function() {$scope.GotoPage( "where6" );};
-$scope.Headline91_click = function() {$scope.GotoPage( "where7" );};
-$scope.Headline92_click = function() {$scope.GotoPage( "where8" );};
+$scope.Headline89_click = function() {$App.T000 = "T005";
+$App.Twherea = localStorage.getItem("where5a");
+$App.Twhere = localStorage.getItem("where5");
+$App.Tfreezecontent = localStorage.getItem("freezecontent5");
+$App.Tulr = localStorage.getItem("ulr5");
+$App.Tulra = localStorage.getItem("ulr5a");
+$App.Tulrb = localStorage.getItem("ulr5b");
+$App.Tulrc = localStorage.getItem("ulr5c");
+$App.Tulrd = localStorage.getItem("ulr5d");
+$App.Tulre = localStorage.getItem("ulr5e");
+$App.Tulrf = localStorage.getItem("ulr5f");
+$App.Twhere = localStorage.getItem("where5");
+$scope.GotoPage( "wheretemplate1" );};
+$scope.Headline90_click = function() {$App.T000 = "T006";
+$App.Twherea = localStorage.getItem("where6a");
+$App.Twhere = localStorage.getItem("where6");
+$App.Tfreezecontent = localStorage.getItem("freezecontent6");
+$App.Tulr = localStorage.getItem("ulr6");
+$App.Tulra = localStorage.getItem("ulr6a");
+$App.Tulrb = localStorage.getItem("ulr6b");
+$App.Tulrc = localStorage.getItem("ulr6c");
+$App.Tulrd = localStorage.getItem("ulr6d");
+$App.Tulre = localStorage.getItem("ulr6e");
+$App.Tulrf = localStorage.getItem("ulr6f");
+$App.Twhere = localStorage.getItem("where6");
+$scope.GotoPage( "wheretemplate1" );};
+$scope.Headline91_click = function() {$App.T000 = "T007";
+$App.Twherea = localStorage.getItem("where7a");
+$App.Twhere = localStorage.getItem("where7");
+$App.Tfreezecontent = localStorage.getItem("freezecontent7");
+$App.Tulr = localStorage.getItem("ulr7");
+$App.Tulra = localStorage.getItem("ulr7a");
+$App.Tulrb = localStorage.getItem("ulr7b");
+$App.Tulrc = localStorage.getItem("ulr7c");
+$App.Tulrd = localStorage.getItem("ulr7d");
+$App.Tulre = localStorage.getItem("ulr7e");
+$App.Tulrf = localStorage.getItem("ulr7f");
+$App.Twhere = localStorage.getItem("where7");
+$scope.GotoPage( "wheretemplate1" );};
+$scope.Headline92_click = function() {$App.T000 = "T008";
+$App.Twherea = localStorage.getItem("where8a");
+$App.Twhere = localStorage.getItem("where8");
+$App.Tfreezecontent = localStorage.getItem("freezecontent8");
+$App.Tulr = localStorage.getItem("ulr8");
+$App.Tulra = localStorage.getItem("ulr8a");
+$App.Tulrb = localStorage.getItem("ulr8b");
+$App.Tulrc = localStorage.getItem("ulr8c");
+$App.Tulrd = localStorage.getItem("ulr8d");
+$App.Tulre = localStorage.getItem("ulr8e");
+$App.Tulrf = localStorage.getItem("ulr8f");
+$App.Twhere = localStorage.getItem("where8");
+$scope.GotoPage( "wheretemplate1" );};
 $scope.SVGicon12_click = function() {neoTalkSpeak($App.where9a, "", 1.1, 1.1);};
 $scope.SVGicon21_click = function() {neoTalkSpeak($App.where10a, "", 1.1, 1.1);};
 $scope.SVGicon22_click = function() {neoTalkSpeak($App.where12a, "", 1.1, 1.1);};
@@ -491,8 +587,139 @@ $scope.Headline60_click = function() {$scope.GotoPage( "where46" );};
 $scope.Headline61_click = function() {$scope.GotoPage( "where47" );};
 $scope.Headline62_click = function() {$scope.GotoPage( "where48" );};
 });
-NeoApp.controller("Evening_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
+NeoApp.controller("wheretemplate1_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
 $App.NAB.PageNumber = 2;
+$App.NAB.PageID = "wheretemplate1";
+$scope.PushButton36_click = function() {$scope.GotoPage( "PreparationKeys" );};
+$scope.SVGicon80_click = function() {neoTalkSpeak($App.Twherea, "", 1.1, 1.1);};
+$scope.Headline168_click = function() {window.open($App.ulr, "_blank");};
+$scope.Headline169_click = function() {$App.freezecontent1 = "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze";
+localStorage.setItem("freezecontent1",$App.freezecontent1);};
+$scope.PushButton38_click = function() {$App.Tulrc = "Frozen";};
+$scope.PushButton39_click = function() {$App.Tulrc = "Un-Frozen";};
+$scope.SVGicon79_click = function() {if ($App.T000 == "T001") {
+localStorage.setItem("where1a",$App.Twherea);
+localStorage.setItem("where1",$App.Twhere);
+localStorage.setItem("freezecontent1",$App.Tfreezecontent);
+localStorage.setItem("ulr1",$App.Tulr);
+localStorage.setItem("ulr1a",$App.Tulra);
+localStorage.setItem("ulr1b",$App.Tulrb);
+localStorage.setItem("ulr1c",$App.Tulrc);
+localStorage.setItem("ulr1d",$App.Tulrd);
+localStorage.setItem("ulr1e",$App.Tulre);
+localStorage.setItem("ulr1f",$App.Tulrf);
+localStorage.setItem("where1",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};
+if ($App.T000 == "T002") {
+localStorage.setItem("where2a",$App.Twherea);
+localStorage.setItem("where2",$App.Twhere);
+localStorage.setItem("freezecontent2",$App.Tfreezecontent);
+localStorage.setItem("ulr2",$App.Tulr);
+localStorage.setItem("ulr2a",$App.Tulra);
+localStorage.setItem("ulr2b",$App.Tulrb);
+localStorage.setItem("ulr2c",$App.Tulrc);
+localStorage.setItem("ulr2d",$App.Tulrd);
+localStorage.setItem("ulr2e",$App.Tulre);
+localStorage.setItem("ulr2f",$App.Tulrf);
+localStorage.setItem("where2",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};
+if ($App.T000 == "T003") {
+localStorage.setItem("where3a",$App.Twherea);
+localStorage.setItem("where3",$App.Twhere);
+localStorage.setItem("freezecontent3",$App.Tfreezecontent);
+localStorage.setItem("ulr3",$App.Tulr);
+localStorage.setItem("ulr3a",$App.Tulra);
+localStorage.setItem("ulr3b",$App.Tulrb);
+localStorage.setItem("ulr3c",$App.Tulrc);
+localStorage.setItem("ulr3d",$App.Tulrd);
+localStorage.setItem("ulr3e",$App.Tulre);
+localStorage.setItem("ulr3f",$App.Tulrf);
+localStorage.setItem("where3",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};
+if ($App.T000 == "T004") {
+localStorage.setItem("where4a",$App.Twherea);
+localStorage.setItem("where4",$App.Twhere);
+localStorage.setItem("freezecontent4",$App.Tfreezecontent);
+localStorage.setItem("ulr4",$App.Tulr);
+localStorage.setItem("ulr4a",$App.Tulra);
+localStorage.setItem("ulr4b",$App.Tulrb);
+localStorage.setItem("ulr4c",$App.Tulrc);
+localStorage.setItem("ulr4d",$App.Tulrd);
+localStorage.setItem("ulr4e",$App.Tulre);
+localStorage.setItem("ulr4f",$App.Tulrf);
+localStorage.setItem("where4",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};
+if ($App.T000 == "T005") {
+localStorage.setItem("where5a",$App.Twherea);
+localStorage.setItem("where5",$App.Twhere);
+localStorage.setItem("freezecontent5",$App.Tfreezecontent);
+localStorage.setItem("ulr5",$App.Tulr);
+localStorage.setItem("ulr5a",$App.Tulra);
+localStorage.setItem("ulr5b",$App.Tulrb);
+localStorage.setItem("ulr5c",$App.Tulrc);
+localStorage.setItem("ulr5d",$App.Tulrd);
+localStorage.setItem("ulr5e",$App.Tulre);
+localStorage.setItem("ulr5f",$App.Tulrf);
+localStorage.setItem("where5",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};
+if ($App.T000 == "T006") {
+localStorage.setItem("where6a",$App.Twherea);
+localStorage.setItem("where6",$App.Twhere);
+localStorage.setItem("freezecontent6",$App.Tfreezecontent);
+localStorage.setItem("ulr6",$App.Tulr);
+localStorage.setItem("ulr6a",$App.Tulra);
+localStorage.setItem("ulr6b",$App.Tulrb);
+localStorage.setItem("ulr6c",$App.Tulrc);
+localStorage.setItem("ulr6d",$App.Tulrd);
+localStorage.setItem("ulr6e",$App.Tulre);
+localStorage.setItem("ulr6f",$App.Tulrf);
+localStorage.setItem("where6",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};
+if ($App.T000 == "T007") {
+localStorage.setItem("where7a",$App.Twherea);
+localStorage.setItem("where7",$App.Twhere);
+localStorage.setItem("freezecontent7",$App.Tfreezecontent);
+localStorage.setItem("ulr7",$App.Tulr);
+localStorage.setItem("ulr7a",$App.Tulra);
+localStorage.setItem("ulr7b",$App.Tulrb);
+localStorage.setItem("ulr7c",$App.Tulrc);
+localStorage.setItem("ulr7d",$App.Tulrd);
+localStorage.setItem("ulr7e",$App.Tulre);
+localStorage.setItem("ulr7f",$App.Tulrf);
+localStorage.setItem("where7",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};
+if ($App.T000 == "T008") {
+localStorage.setItem("where8a",$App.Twherea);
+localStorage.setItem("where8",$App.Twhere);
+localStorage.setItem("freezecontent8",$App.Tfreezecontent);
+localStorage.setItem("ulr8",$App.Tulr);
+localStorage.setItem("ulr8a",$App.Tulra);
+localStorage.setItem("ulr8b",$App.Tulrb);
+localStorage.setItem("ulr8c",$App.Tulrc);
+localStorage.setItem("ulr8d",$App.Tulrd);
+localStorage.setItem("ulr8e",$App.Tulre);
+localStorage.setItem("ulr8f",$App.Tulrf);
+localStorage.setItem("where8",$App.Twhere);
+$scope.GotoPage( "landinghome" );
+} else {
+};};
+});
+NeoApp.controller("Evening_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
+$App.NAB.PageNumber = 3;
 $App.NAB.PageID = "Evening";
 $scope.TextArea18_change = function() {localStorage.setItem("freezecontent",$App.freezecontent);};
 $scope.Headline155_click = function() {if ($App.freezecontent == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -502,7 +729,7 @@ $scope.GotoPage( "landinghome" );
 };};
 });
 NeoApp.controller("v4rules_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 3;
+$App.NAB.PageNumber = 4;
 $App.NAB.PageID = "v4rules";
 $scope.TextArea20_change = function() {localStorage.setItem("v4rules",$App.v4rules);};
 $scope.Headline165_click = function() {if ($App.freezecontent == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -512,7 +739,7 @@ $scope.GotoPage( "landinghome" );
 };};
 });
 NeoApp.controller("morning_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 4;
+$App.NAB.PageNumber = 5;
 $App.NAB.PageID = "morning";
 $scope.Headline159_click = function() {if ($App.freezecontent == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
 $App.var1 = "!";
@@ -522,7 +749,7 @@ $scope.GotoPage( "landinghome" );
 $scope.TextArea17_change = function() {localStorage.setItem("freezecontent",$App.freezecontent);};
 });
 NeoApp.controller("Records-2026_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 5;
+$App.NAB.PageNumber = 6;
 $App.NAB.PageID = "Records-2026";
 $scope.TextArea335_change = function() {localStorage.setItem("june260",$App.june260);};
 $scope.PushButton583_click = function() {$scope.ObjectToFront("ContainerMay26");};
@@ -583,7 +810,7 @@ $scope.TextArea470_change = function() {localStorage.setItem("july263",$App.july
 $scope.PushButton448_click = function() {$scope.GotoPage( "Stages" );};
 });
 NeoApp.controller("where1_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 6;
+$App.NAB.PageNumber = 7;
 $App.NAB.PageID = "where1";
 $scope.TextInput275_change = function() {localStorage.setItem("where1",$App.where1);};
 $scope.SVGicon243_click = function() {if ($App.freezecontent1 == "") {
@@ -621,7 +848,7 @@ localStorage.setItem("ulr1c",$App.ulr1c);};
 $scope.TextInput64_change = function() {localStorage.setItem("ulr1b",$App.ulr1b);};
 });
 NeoApp.controller("where2_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 7;
+$App.NAB.PageNumber = 8;
 $App.NAB.PageID = "where2";
 $scope.SVGicon240_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton269_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -635,7 +862,7 @@ $scope.PushButton17_click = function() {$App.where2a = $App.recall;
 localStorage.setItem("where2a",$App.where2a);};
 });
 NeoApp.controller("where3_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 8;
+$App.NAB.PageNumber = 9;
 $App.NAB.PageID = "where3";
 $scope.SVGicon241_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton273_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -647,7 +874,7 @@ $scope.SVGicon36_click = function() {neoTalkSpeak($App.where3a, "", 1.1, 1.1);};
 $scope.Headline137_click = function() {window.open($App.ulr3, "_blank");};
 });
 NeoApp.controller("where4_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 9;
+$App.NAB.PageNumber = 10;
 $App.NAB.PageID = "where4";
 $scope.SVGicon242_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton284_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -659,7 +886,7 @@ $scope.SVGicon37_click = function() {neoTalkSpeak($App.where4a, "", 1.1, 1.1);};
 $scope.Headline139_click = function() {window.open($App.ulr4, "_blank");};
 });
 NeoApp.controller("where5_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 10;
+$App.NAB.PageNumber = 11;
 $App.NAB.PageID = "where5";
 $scope.SVGicon244_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton444_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -671,7 +898,7 @@ $scope.SVGicon39_click = function() {neoTalkSpeak($App.where5a, "", 1.1, 1.1);};
 $scope.Headline141_click = function() {window.open($App.ulr5, "_blank");};
 });
 NeoApp.controller("where6_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 11;
+$App.NAB.PageNumber = 12;
 $App.NAB.PageID = "where6";
 $scope.SVGicon245_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton445_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -683,7 +910,7 @@ $scope.SVGicon40_click = function() {neoTalkSpeak($App.where6a, "", 1.1, 1.1);};
 $scope.Headline143_click = function() {window.open($App.ulr6, "_blank");};
 });
 NeoApp.controller("where7_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 12;
+$App.NAB.PageNumber = 13;
 $App.NAB.PageID = "where7";
 $scope.SVGicon246_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton446_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -695,7 +922,7 @@ $scope.SVGicon267_click = function() {neoTalkSpeak($App.where7a, "", 1.1, 1.1);}
 $scope.Headline449_click = function() {window.open($App.ulr7, "_blank");};
 });
 NeoApp.controller("where8_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 13;
+$App.NAB.PageNumber = 14;
 $App.NAB.PageID = "where8";
 $scope.SVGicon247_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton447_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -707,7 +934,7 @@ $scope.SVGicon266_click = function() {neoTalkSpeak($App.where8a, "", 1.1, 1.1);}
 $scope.Headline447_click = function() {window.open($App.ulr8, "_blank");};
 });
 NeoApp.controller("where9_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 14;
+$App.NAB.PageNumber = 15;
 $App.NAB.PageID = "where9";
 $scope.SVGicon249_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton451_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -719,7 +946,7 @@ $scope.SVGicon265_click = function() {neoTalkSpeak($App.where9a, "", 1.1, 1.1);}
 $scope.Headline421_click = function() {window.open($App.ulr9, "_blank");};
 });
 NeoApp.controller("where10_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 15;
+$App.NAB.PageNumber = 16;
 $App.NAB.PageID = "where10";
 $scope.SVGicon250_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton452_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -731,7 +958,7 @@ $scope.SVGicon264_click = function() {neoTalkSpeak($App.where10a, "", 1.1, 1.1);
 $scope.Headline419_click = function() {window.open($App.ulr6, "_blank");};
 });
 NeoApp.controller("where11_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 16;
+$App.NAB.PageNumber = 17;
 $App.NAB.PageID = "where11";
 $scope.SVGicon251_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton453_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -743,7 +970,7 @@ $scope.SVGicon263_click = function() {neoTalkSpeak($App.where11a, "", 1.1, 1.1);
 $scope.Headline390_click = function() {window.open($App.ulr6, "_blank");};
 });
 NeoApp.controller("where12_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 17;
+$App.NAB.PageNumber = 18;
 $App.NAB.PageID = "where12";
 $scope.SVGicon252_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton454_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -755,7 +982,7 @@ $scope.SVGicon262_click = function() {neoTalkSpeak($App.where12a, "", 1.1, 1.1);
 $scope.Headline388_click = function() {window.open($App.ulr12, "_blank");};
 });
 NeoApp.controller("where13_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 18;
+$App.NAB.PageNumber = 19;
 $App.NAB.PageID = "where13";
 $scope.SVGicon4_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton118_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -767,7 +994,7 @@ $scope.SVGicon261_click = function() {neoTalkSpeak($App.where13a, "", 1.1, 1.1);
 $scope.Headline177_click = function() {window.open($App.ulr13, "_blank");};
 });
 NeoApp.controller("where14_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 19;
+$App.NAB.PageNumber = 20;
 $App.NAB.PageID = "where14";
 $scope.SVGicon5_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton119_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -779,7 +1006,7 @@ $scope.SVGicon248_click = function() {neoTalkSpeak($App.where14a, "", 1.1, 1.1);
 $scope.Headline175_click = function() {window.open($App.ulr14, "_blank");};
 });
 NeoApp.controller("where15_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 20;
+$App.NAB.PageNumber = 21;
 $App.NAB.PageID = "where15";
 $scope.SVGicon6_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton120_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -791,7 +1018,7 @@ $scope.SVGicon179_click = function() {neoTalkSpeak($App.where15a, "", 1.1, 1.1);
 $scope.Headline152_click = function() {window.open($App.ulr15, "_blank");};
 });
 NeoApp.controller("where16_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 21;
+$App.NAB.PageNumber = 22;
 $App.NAB.PageID = "where16";
 $scope.SVGicon10_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton121_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -803,7 +1030,7 @@ $scope.SVGicon178_click = function() {neoTalkSpeak($App.where16a, "", 1.1, 1.1);
 $scope.Headline145_click = function() {window.open($App.ulr16, "_blank");};
 });
 NeoApp.controller("where17_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 22;
+$App.NAB.PageNumber = 23;
 $App.NAB.PageID = "where17";
 $scope.SVGicon268_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton122_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -815,7 +1042,7 @@ $scope.SVGicon269_click = function() {neoTalkSpeak($App.where17a, "", 1.1, 1.1);
 $scope.Headline520_click = function() {window.open($App.ulr17, "_blank");};
 });
 NeoApp.controller("where18_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 23;
+$App.NAB.PageNumber = 24;
 $App.NAB.PageID = "where18";
 $scope.SVGicon270_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton123_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -827,7 +1054,7 @@ $scope.SVGicon271_click = function() {neoTalkSpeak($App.where18a, "", 1.1, 1.1);
 $scope.Headline584_click = function() {window.open($App.ulr18, "_blank");};
 });
 NeoApp.controller("where19_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 24;
+$App.NAB.PageNumber = 25;
 $App.NAB.PageID = "where19";
 $scope.SVGicon272_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton124_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -839,7 +1066,7 @@ $scope.SVGicon273_click = function() {neoTalkSpeak($App.where19a, "", 1.1, 1.1);
 $scope.Headline646_click = function() {window.open($App.ulr19, "_blank");};
 });
 NeoApp.controller("where20_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 25;
+$App.NAB.PageNumber = 26;
 $App.NAB.PageID = "where20";
 $scope.SVGicon274_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton125_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -851,7 +1078,7 @@ $scope.SVGicon275_click = function() {neoTalkSpeak($App.where20a, "", 1.1, 1.1);
 $scope.Headline649_click = function() {window.open($App.ulr20, "_blank");};
 });
 NeoApp.controller("where21_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 26;
+$App.NAB.PageNumber = 27;
 $App.NAB.PageID = "where21";
 $scope.SVGicon280_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton126_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -863,7 +1090,7 @@ $scope.SVGicon281_click = function() {neoTalkSpeak($App.where21a, "", 1.1, 1.1);
 $scope.Headline666_click = function() {window.open($App.ulr21, "_blank");};
 });
 NeoApp.controller("where22_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 27;
+$App.NAB.PageNumber = 28;
 $App.NAB.PageID = "where22";
 $scope.SVGicon282_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton127_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -875,7 +1102,7 @@ $scope.SVGicon283_click = function() {neoTalkSpeak($App.where22a, "", 1.1, 1.1);
 $scope.Headline670_click = function() {window.open($App.ulr22, "_blank");};
 });
 NeoApp.controller("where23_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 28;
+$App.NAB.PageNumber = 29;
 $App.NAB.PageID = "where23";
 $scope.SVGicon284_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton128_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -887,7 +1114,7 @@ $scope.SVGicon285_click = function() {neoTalkSpeak($App.where23a, "", 1.1, 1.1);
 $scope.Headline676_click = function() {window.open($App.ulr23, "_blank");};
 });
 NeoApp.controller("where24_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 29;
+$App.NAB.PageNumber = 30;
 $App.NAB.PageID = "where24";
 $scope.SVGicon286_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton135_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -899,7 +1126,7 @@ $scope.SVGicon287_click = function() {neoTalkSpeak($App.where24a, "", 1.1, 1.1);
 $scope.Headline680_click = function() {window.open($App.ulr24, "_blank");};
 });
 NeoApp.controller("where25_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 30;
+$App.NAB.PageNumber = 31;
 $App.NAB.PageID = "where25";
 $scope.SVGicon288_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton136_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -911,7 +1138,7 @@ $scope.SVGicon289_click = function() {neoTalkSpeak($App.where25a, "", 1.1, 1.1);
 $scope.Headline683_click = function() {window.open($App.ulr25, "_blank");};
 });
 NeoApp.controller("where26_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 31;
+$App.NAB.PageNumber = 32;
 $App.NAB.PageID = "where26";
 $scope.SVGicon290_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton141_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -923,7 +1150,7 @@ $scope.SVGicon291_click = function() {neoTalkSpeak($App.where26a, "", 1.1, 1.1);
 $scope.Headline699_click = function() {window.open($App.ulr26, "_blank");};
 });
 NeoApp.controller("where27_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 32;
+$App.NAB.PageNumber = 33;
 $App.NAB.PageID = "where27";
 $scope.SVGicon292_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton142_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -935,7 +1162,7 @@ $scope.SVGicon293_click = function() {neoTalkSpeak($App.where27a, "", 1.1, 1.1);
 $scope.Headline702_click = function() {window.open($App.ulr27, "_blank");};
 });
 NeoApp.controller("where28_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 33;
+$App.NAB.PageNumber = 34;
 $App.NAB.PageID = "where28";
 $scope.SVGicon253_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton143_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -947,7 +1174,7 @@ $scope.SVGicon294_click = function() {neoTalkSpeak($App.where28a, "", 1.1, 1.1);
 $scope.Headline706_click = function() {window.open($App.ulr28, "_blank");};
 });
 NeoApp.controller("where29_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 34;
+$App.NAB.PageNumber = 35;
 $App.NAB.PageID = "where29";
 $scope.SVGicon2_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton2_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -959,7 +1186,7 @@ $scope.SVGicon3_click = function() {neoTalkSpeak($App.where29a, "", 1.1, 1.1);};
 $scope.Headline3_click = function() {window.open($App.ulr29, "_blank");};
 });
 NeoApp.controller("where30_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 35;
+$App.NAB.PageNumber = 36;
 $App.NAB.PageID = "where30";
 $scope.SVGicon13_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton3_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -971,7 +1198,7 @@ $scope.SVGicon14_click = function() {neoTalkSpeak($App.where30a, "", 1.1, 1.1);}
 $scope.Headline6_click = function() {window.open($App.ulr30, "_blank");};
 });
 NeoApp.controller("where31_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 36;
+$App.NAB.PageNumber = 37;
 $App.NAB.PageID = "where31";
 $scope.SVGicon15_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton4_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -983,7 +1210,7 @@ $scope.SVGicon16_click = function() {neoTalkSpeak($App.where31a, "", 1.1, 1.1);}
 $scope.Headline9_click = function() {window.open($App.ulr31, "_blank");};
 });
 NeoApp.controller("where32_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 37;
+$App.NAB.PageNumber = 38;
 $App.NAB.PageID = "where32";
 $scope.SVGicon17_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton5_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -995,7 +1222,7 @@ $scope.SVGicon18_click = function() {neoTalkSpeak($App.where32a, "", 1.1, 1.1);}
 $scope.Headline12_click = function() {window.open($App.ulr32, "_blank");};
 });
 NeoApp.controller("where33_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 38;
+$App.NAB.PageNumber = 39;
 $App.NAB.PageID = "where33";
 $scope.SVGicon19_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton6_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1007,7 +1234,7 @@ $scope.SVGicon20_click = function() {neoTalkSpeak($App.where33a, "", 1.1, 1.1);}
 $scope.Headline15_click = function() {window.open($App.ulr33, "_blank");};
 });
 NeoApp.controller("where34_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 39;
+$App.NAB.PageNumber = 40;
 $App.NAB.PageID = "where34";
 $scope.SVGicon25_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton7_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1019,7 +1246,7 @@ $scope.SVGicon26_click = function() {neoTalkSpeak($App.where34a, "", 1.1, 1.1);}
 $scope.Headline18_click = function() {window.open($App.ulr34, "_blank");};
 });
 NeoApp.controller("where35_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 40;
+$App.NAB.PageNumber = 41;
 $App.NAB.PageID = "where35";
 $scope.SVGicon27_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton8_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1031,7 +1258,7 @@ $scope.SVGicon28_click = function() {neoTalkSpeak($App.where35a, "", 1.1, 1.1);}
 $scope.Headline21_click = function() {window.open($App.ulr35, "_blank");};
 });
 NeoApp.controller("where36_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 41;
+$App.NAB.PageNumber = 42;
 $App.NAB.PageID = "where36";
 $scope.SVGicon29_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton9_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1043,7 +1270,7 @@ $scope.SVGicon30_click = function() {neoTalkSpeak($App.where36a, "", 1.1, 1.1);}
 $scope.Headline24_click = function() {window.open($App.ulr36, "_blank");};
 });
 NeoApp.controller("where37_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 42;
+$App.NAB.PageNumber = 43;
 $App.NAB.PageID = "where37";
 $scope.SVGicon31_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton10_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1055,7 +1282,7 @@ $scope.SVGicon32_click = function() {neoTalkSpeak($App.where37a, "", 1.1, 1.1);}
 $scope.Headline27_click = function() {window.open($App.ulr37, "_blank");};
 });
 NeoApp.controller("where38_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 43;
+$App.NAB.PageNumber = 44;
 $App.NAB.PageID = "where38";
 $scope.SVGicon33_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton11_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1067,7 +1294,7 @@ $scope.SVGicon34_click = function() {neoTalkSpeak($App.where38a, "", 1.1, 1.1);}
 $scope.Headline31_click = function() {window.open($App.ulr38, "_blank");};
 });
 NeoApp.controller("where39_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 44;
+$App.NAB.PageNumber = 45;
 $App.NAB.PageID = "where39";
 $scope.SVGicon38_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton12_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1079,7 +1306,7 @@ $scope.SVGicon43_click = function() {neoTalkSpeak($App.where39a, "", 1.1, 1.1);}
 $scope.Headline34_click = function() {window.open($App.ulr39, "_blank");};
 });
 NeoApp.controller("where40_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 45;
+$App.NAB.PageNumber = 46;
 $App.NAB.PageID = "where40";
 $scope.SVGicon44_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton13_click = function() {$scope.GotoPage( "PreparationKeys" );};
@@ -1091,7 +1318,7 @@ $scope.SVGicon45_click = function() {neoTalkSpeak($App.where40a, "", 1.1, 1.1);}
 $scope.Headline37_click = function() {window.open($App.ulr40, "_blank");};
 });
 NeoApp.controller("where41_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 46;
+$App.NAB.PageNumber = 47;
 $App.NAB.PageID = "where41";
 $scope.TextInput40_change = function() {localStorage.setItem("where41",$App.where41);};
 $scope.SVGicon87_click = function() {if ($App.freezecontent41 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1112,7 +1339,7 @@ $scope.Headline194_click = function() {$App.freezecontent41 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent41",$App.freezecontent41);};
 });
 NeoApp.controller("where42_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 47;
+$App.NAB.PageNumber = 48;
 $App.NAB.PageID = "where42";
 $scope.TextInput43_change = function() {localStorage.setItem("where42",$App.where42);};
 $scope.SVGicon89_click = function() {if ($App.freezecontent42 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1133,7 +1360,7 @@ $scope.Headline198_click = function() {$App.freezecontent42 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent42",$App.freezecontent42);};
 });
 NeoApp.controller("where43_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 48;
+$App.NAB.PageNumber = 49;
 $App.NAB.PageID = "where43";
 $scope.TextInput46_change = function() {localStorage.setItem("where43",$App.where43);};
 $scope.SVGicon91_click = function() {if ($App.freezecontent43 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1154,7 +1381,7 @@ $scope.Headline202_click = function() {$App.freezecontent43 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent43",$App.freezecontent43);};
 });
 NeoApp.controller("where44_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 49;
+$App.NAB.PageNumber = 50;
 $App.NAB.PageID = "where44";
 $scope.TextInput49_change = function() {localStorage.setItem("where44",$App.where44);};
 $scope.SVGicon93_click = function() {if ($App.freezecontent44 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1175,7 +1402,7 @@ $scope.Headline206_click = function() {$App.freezecontent44 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent44",$App.freezecontent44);};
 });
 NeoApp.controller("where45_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 50;
+$App.NAB.PageNumber = 51;
 $App.NAB.PageID = "where45";
 $scope.TextInput52_change = function() {localStorage.setItem("where45",$App.where45);};
 $scope.SVGicon95_click = function() {if ($App.freezecontent45 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1196,7 +1423,7 @@ $scope.Headline210_click = function() {$App.freezecontent45 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent45",$App.freezecontent45);};
 });
 NeoApp.controller("where46_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 51;
+$App.NAB.PageNumber = 52;
 $App.NAB.PageID = "where46";
 $scope.TextInput55_change = function() {localStorage.setItem("where46",$App.where46);};
 $scope.SVGicon97_click = function() {if ($App.freezecontent46 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1217,7 +1444,7 @@ $scope.Headline214_click = function() {$App.freezecontent46 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent46",$App.freezecontent46);};
 });
 NeoApp.controller("where47_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 52;
+$App.NAB.PageNumber = 53;
 $App.NAB.PageID = "where47";
 $scope.TextInput58_change = function() {localStorage.setItem("where47",$App.where47);};
 $scope.SVGicon99_click = function() {if ($App.freezecontent47 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1238,7 +1465,7 @@ $scope.Headline218_click = function() {$App.freezecontent47 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent47",$App.freezecontent47);};
 });
 NeoApp.controller("where48_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 53;
+$App.NAB.PageNumber = 54;
 $App.NAB.PageID = "where48";
 $scope.TextInput61_change = function() {localStorage.setItem("where48",$App.where48);};
 $scope.SVGicon101_click = function() {if ($App.freezecontent48 == "Enter Unfreeze promt here: Why this was started? why it was frozen? 1st thing to do after un freeze") {
@@ -1259,7 +1486,7 @@ $scope.Headline222_click = function() {$App.freezecontent48 = "Enter Unfreeze pr
 localStorage.setItem("freezecontent48",$App.freezecontent48);};
 });
 NeoApp.controller("V4DiaryVersionRecord_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 54;
+$App.NAB.PageNumber = 55;
 $App.NAB.PageID = "V4DiaryVersionRecord";
 $scope.SVGicon174_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton134_click = function() {$scope.GotoPage( "v4WORKSHOP002" );};
@@ -1267,13 +1494,13 @@ $scope.TextArea356_change = function() {localStorage.setItem("v4DiaryVersionReco
 $scope.TextArea357_change = function() {localStorage.setItem("v4path2b",$App.v4path2b);};
 });
 NeoApp.controller("VERSION_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 55;
+$App.NAB.PageNumber = 56;
 $App.NAB.PageID = "VERSION";
 $scope.TextArea4_change = function() {localStorage.setItem("VERSIONRECORD",$App.VERSIONRECORD);};
 $scope.SVGicon46_click = function() {$scope.GotoPage( "landinghome" );};
 });
 NeoApp.controller("PrayerReps_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 56;
+$App.NAB.PageNumber = 57;
 $App.NAB.PageID = "PrayerReps";
 $scope.PushButton957_click = function() {neoTalkSpeak($App.Prayer, "", $App.read1, $App.read2);};
 $scope.PushButton958_click = function() {neoTalkSpeak($App.Reps, "", $App.read1, $App.read2);};
@@ -1291,7 +1518,7 @@ $scope.SVGicon9_click = function() {neoTalkCancelSpeech();};
 $scope.SVGicon35_click = function() {$scope.GotoPage( "landinghome" );};
 });
 NeoApp.controller("DailyReps1_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 57;
+$App.NAB.PageNumber = 58;
 $App.NAB.PageID = "DailyReps1";
 $scope.TextArea12_change = function() {localStorage.setItem("Reps",$App.Reps);};
 $scope.PushButton198_click = function() {neoTalkSpeak($App.Reps, "", $App.read1, $App.read2);};
@@ -1306,7 +1533,7 @@ $scope.TextArea401_change = function() {localStorage.setItem("Reps3tit",$App.Rep
 $scope.Headline665_click = function() {$scope.GotoPage( "landinghome" );};
 });
 NeoApp.controller("Prayer1_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 58;
+$App.NAB.PageNumber = 59;
 $App.NAB.PageID = "Prayer1";
 $scope.TextArea11_change = function() {localStorage.setItem("Prayer",$App.Prayer);};
 $scope.PushButton210_click = function() {neoTalkSpeak($App.Prayer, "", $App.read1, $App.read2);};
@@ -1320,7 +1547,7 @@ $scope.Headline668_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton16_click = function() {$App.Prayer = $App.Prayer4;};
 });
 NeoApp.controller("Allvariables_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
-$App.NAB.PageNumber = 59;
+$App.NAB.PageNumber = 60;
 $App.NAB.PageID = "Allvariables";
 $scope.Headline697_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.PushButton217_click = function() {navigator.clipboard.writeText($App.allvaribles);};
