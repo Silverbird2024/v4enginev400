@@ -606,9 +606,9 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #Headline299 {position:absolute;left:-3px;top:130px;width:96px;height:43px;margin:0;color:white;font-family:Times New Roman,Times,serif;font-size:13pt;font-weight:600;letter-spacing:1;text-align:center;text-decoration:underline}
 #Headline299:hover {color:#FFFF00;font-weight:200}
 #Headline127 {position:absolute;left:185px;top:189px;width:87px;height:49px;margin:0;font-size:22pt;font-weight:800;text-align:center}
-#Headline135 {position:absolute;left:8px;top:188px;width:75px;height:52px;margin:0;font-size:24pt;font-weight:800;text-align:center}
-#Headline373 {position:absolute;left:269px;top:133px;width:76px;height:54px;margin:0;}
-#Headline374 {position:absolute;left:154px;top:127px;width:75px;height:47px;margin:0;font-size:24pt;font-weight:800;text-align:center}
+#Headline135 {position:absolute;left:8px;top:188px;width:75px;height:52px;margin:0;font-size:18pt;font-weight:600;text-align:center}
+#Headline373 {position:absolute;left:269px;top:133px;width:76px;height:54px;margin:0;font-size:18pt;font-weight:600;text-align:center}
+#Headline374 {position:absolute;left:154px;top:127px;width:75px;height:47px;margin:0;font-size:18pt;font-weight:600;text-align:center}
 #Container8 {position:absolute;left:-3px;top:303px;width:365px;height:236px;margin:0;color:#A9A9A9;background-color:#707070;border-style:solid;border-width:1px;overflow-x:hidden;overflow-y:hidden}
 #Headline335 {position:absolute;left:108px;top:67px;width:64px;height:32px;margin:0;color:#383838;font-family:Times New Roman,Times,serif;font-size:13pt;font-weight:600;text-align:center;text-shadow:1px 1px 5px white}
 #Headline335:hover {color:#FFFF00}
